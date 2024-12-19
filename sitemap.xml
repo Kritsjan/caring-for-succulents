@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage -->
+    <url>
+        <loc>https://caringforsucculents.com/</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Tools -->
+    <url>
+        <loc>https://caringforsucculents.com/tools/plant-watering-calculator.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://caringforsucculents.com/tools/pot-volume-calculator.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://caringforsucculents.com/tools/leaf-propagation-guide.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Tools Index -->
+    <url>
+        <loc>https://caringforsucculents.com/tools/index.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Blog Index -->
+    <url>
+        <loc>https://caringforsucculents.com/blog/index.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://caringforsucculents.com/blog/common-watering-mistakes.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://caringforsucculents.com/blog/caring-for-succulents.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://caringforsucculents.com/blog/propagating-succulents.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://caringforsucculents.com/blog/planting-propagated-succulents.html</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

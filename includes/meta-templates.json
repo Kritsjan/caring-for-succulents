@@ -1,0 +1,58 @@
+{
+    "homepage": {
+        "title": "Caring For Succulents: Expert Guide to Succulent & Cacti Care",
+        "description": "Learn everything about succulent care, propagation tips, and how to keep your cacti thriving. Expert advice for both beginners and experienced plant parents.",
+        "keywords": "succulent care, caring for succulents, succulent guide, cacti care"
+    },
+    "propagation": {
+        "propagating-succulents": {
+            "title": "How to Propagate Succulents: Complete Guide with Expert Tips",
+            "description": "Learn how to propagate succulents successfully with our step-by-step guide. Discover different propagation methods and expert tips for growing new succulents.",
+            "keywords": "propagating succulents, succulent propagation, how to propagate succulents"
+        },
+        "propagating-echeveria": {
+            "title": "Propagating Echeveria: Step-by-Step Guide to Growing New Plants",
+            "description": "Master the art of propagating Echeveria with our detailed guide. Learn leaf propagation, stem cuttings, and care tips for successful Echeveria multiplication.",
+            "keywords": "propagating echeveria, echeveria propagation, how to propagate echeveria"
+        },
+        "propagating-christmas-cactus": {
+            "title": "Propagating Christmas Cactus: Complete Care & Growth Guide",
+            "description": "Discover how to propagate Christmas Cactus successfully. Step-by-step guide for taking cuttings, rooting, and caring for new Christmas Cactus plants.",
+            "keywords": "propagating christmas cactus, christmas cactus propagation, how to propagate christmas cactus"
+        }
+    },
+    "care-guides": {
+        "caring-for-succulents": {
+            "title": "Caring for Succulents: Essential Guide to Healthy Growth",
+            "description": "Master the art of caring for succulents with our comprehensive guide. Learn watering, light requirements, soil needs, and maintenance tips for thriving plants.",
+            "keywords": "caring for succulents, succulent care guide, how to care for succulents"
+        },
+        "succulent-plants-care": {
+            "title": "Succulent Plants Care: Complete Guide to Growing Healthy Succulents",
+            "description": "Everything you need to know about succulent plants care. Learn proper watering, lighting, soil requirements, and maintenance for thriving succulent plants.",
+            "keywords": "succulent plants care, how to care for succulent plants, succulent plant guide"
+        },
+        "leggy-succulent": {
+            "title": "Fix Leggy Succulents: Prevention & Care Guide for Stretched Plants",
+            "description": "Learn how to fix and prevent leggy succulents. Expert tips on proper lighting, pruning, and care to maintain compact, healthy succulent growth.",
+            "keywords": "leggy succulent, stretched succulent, etiolated succulent care"
+        }
+    },
+    "species": {
+        "burro-tail-care": {
+            "title": "Burro's Tail Care Guide: Growing & Maintaining Sedum morganianum",
+            "description": "Complete guide to Burro's Tail care. Learn about watering, light requirements, propagation, and maintenance of this trailing succulent.",
+            "keywords": "burro tail care, sedum morganianum care, donkey tail plant"
+        },
+        "haworthia-care": {
+            "title": "Haworthia Care: Complete Guide to Growing Zebra Plants",
+            "description": "Expert guide to Haworthia care. Learn proper watering, lighting, soil mix, and maintenance tips for healthy Haworthia succulents.",
+            "keywords": "haworthia care, zebra plant care, how to care for haworthia"
+        },
+        "string-of-pearls-care": {
+            "title": "String of Pearls Care: Growing & Maintaining Senecio rowleyanus",
+            "description": "Master String of Pearls care with our comprehensive guide. Learn watering, light requirements, propagation, and maintenance tips.",
+            "keywords": "string of pearls care, senecio rowleyanus care, string of beads plant"
+        }
+    }
+}

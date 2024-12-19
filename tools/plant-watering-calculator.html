@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Watering Calculator - Caring For Succulents</title>
+    <meta name="description" content="Calculate the perfect watering schedule for your succulents with our watering calculator. Get personalized recommendations based on your plant type, pot size, and environmental conditions.">
+    <meta name="keywords" content="succulent watering calculator, plant watering schedule, succulent care calculator, watering frequency calculator">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Plant Watering Calculator for Succulents - Perfect Watering Schedule">
+    <meta property="og:description" content="Calculate the perfect watering schedule for your succulents. Get personalized recommendations based on your plant's needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caringforsucculents.com/tools/plant-watering-calculator">
+    <meta property="og:image" content="https://caringforsucculents.com/images/watering-calculator-og.jpg">
+    <meta property="og:image:alt" content="Succulent being watered properly">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Plant Watering Calculator for Succulents">
+    <meta name="twitter:description" content="Get a personalized watering schedule for your succulents with our easy-to-use calculator.">
+    <meta name="twitter:image" content="https://caringforsucculents.com/images/watering-calculator-og.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://caringforsucculents.com/tools/plant-watering-calculator">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Components Script -->
+    <script src="../js/components.js"></script>
+</head>
+<body data-page="watering">
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main id="main-content" class="calculator-page">
+        <div class="page-icon">
+            <i class="fas fa-tint"></i>
+        </div>
+        <h1>Plant Watering Calculator for Succulents: Find Your Perfect Watering Schedule</h1>
+        
+        <section class="calculator-section">
+            <div class="calculator-container">
+                <div class="calculator-header">
+                    <h2>Succulent Watering Calculator</h2>
+                    <p>Get personalized watering recommendations based on your plant's specific needs and environment</p>
+                </div>
+
+                <div class="unit-toggle-container">
+                    <span class="unit-label">Imperial</span>
+                    <label class="switch">
+                        <input type="checkbox" id="unitToggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="unit-label">Metric</span>
+                </div>
+
+                <form id="wateringCalculator" class="calculator-form">
+                    <div class="form-group">
+                        <label for="plantType"><i class="fas fa-leaf"></i> What type of succulent do you have?</label>
+                        <div class="select-wrapper">
+                            <select id="plantType" required>
+                                <option value="">Choose your plant type</option>
+                                <option value="desert">🌵 Desert Cacti</option>
+                                <option value="tropical">🌿 Tropical Succulents</option>
+                                <option value="sempervivum">🍀 Sempervivum (Hens and Chicks)</option>
+                                <option value="echeveria">🎋 Echeveria</option>
+                                <option value="haworthia">🌱 Haworthia</option>
+                            </select>
+                            <i class="fas fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="potSize"><i class="fas fa-ruler"></i> How big is your pot? <span class="unit-text">cm</span></label>
+                        <div class="input-wrapper">
+                            <input type="number" id="potSize" min="1" max="100" required>
+                            <i class="fas fa-arrows-alt-h input-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-sun"></i> What's your light exposure?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="light" value="full" required>
+                                <i class="fas fa-sun"></i>
+                                <span>Full Sun</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="light" value="partial">
+                                <i class="fas fa-cloud-sun"></i>
+                                <span>Partial Sun</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="light" value="shade">
+                                <i class="fas fa-cloud"></i>
+                                <span>Shade</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> What season is it?</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="season" value="spring" required>
+                                <i class="fas fa-seedling"></i>
+                                <span>Spring</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="season" value="summer">
+                                <i class="fas fa-sun"></i>
+                                <span>Summer</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="season" value="fall">
+                                <i class="fas fa-leaf"></i>
+                                <span>Fall</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="season" value="winter">
+                                <i class="fas fa-snowflake"></i>
+                                <span>Winter</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="humidity"><i class="fas fa-tint"></i> What's your average humidity level?</label>
+                        <div class="slider-container">
+                            <input type="range" id="humidity" min="0" max="100" value="50" class="range-slider">
+                            <output for="humidity" id="humidityOutput" class="slider-output">50%</output>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="calculateButton">
+                        <i class="fas fa-calculator"></i> Calculate Watering Schedule
+                    </button>
+                </form>
+
+                <div id="results" class="results-section hidden">
+                    <h3>Your Personalized Watering Schedule</h3>
+                    <div id="wateringSchedule"></div>
+                    <div id="seasonalNote"></div>
+                    
+                    <div class="care-tips">
+                        <h3>Care Tips:</h3>
+                        <ul>
+                            <li>Always check soil moisture before watering</li>
+                            <li>Water thoroughly until water drains from bottom</li>
+                            <li>Adjust schedule based on plant's response</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-content">
+            <h2>Understanding Your Succulent's Watering Needs</h2>
+            <p>Proper watering is crucial for the health and longevity of your succulents. Our succulent watering calculator takes into account various factors that influence how often you should water your plants:</p>
+            
+            <h3>Key Factors That Affect Succulent Watering</h3>
+            <ul>
+                <li><strong>Season:</strong> Succulents need less water during their dormant period in winter and more during their active growing season.</li>
+                <li><strong>Pot Size:</strong> Larger pots retain moisture longer, while smaller pots dry out more quickly.</li>
+                <li><strong>Humidity:</strong> High humidity environments require less frequent watering as moisture evaporates more slowly.</li>
+                <li><strong>Light Exposure:</strong> Plants in bright, direct sunlight may need more frequent watering than those in partial shade.</li>
+            </ul>
+
+            <h3>Common Signs of Improper Watering</h3>
+            <div class="watering-signs">
+                <div class="underwatering">
+                    <h4>Signs of Underwatering</h4>
+                    <ul>
+                        <li>Wrinkled, shriveled leaves</li>
+                        <li>Dry, crispy leaf tips</li>
+                        <li>Slow or stunted growth</li>
+                        <li>Leaves falling off easily</li>
+                    </ul>
+                </div>
+                <div class="overwatering">
+                    <h4>Signs of Overwatering</h4>
+                    <ul>
+                        <li>Yellowing, translucent leaves</li>
+                        <li>Mushy, soft stems</li>
+                        <li>Black spots on leaves</li>
+                        <li>Root rot</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Tips for Successful Succulent Watering</h3>
+            <ol>
+                <li>Always use well-draining soil specifically designed for succulents and cacti</li>
+                <li>Water thoroughly until water drains from the bottom of the pot</li>
+                <li>Allow soil to dry completely between waterings</li>
+                <li>Adjust watering frequency based on seasonal changes</li>
+                <li>Use pots with drainage holes to prevent water accumulation</li>
+            </ol>
+
+            <div class="calculator-cta">
+                <p>Use our succulent watering calculator above to create a customized watering schedule that takes into account your specific growing conditions. Remember that these are general guidelines, and you should always monitor your plants and adjust watering as needed based on their individual needs and responses.</p>
+            </div>
+        </section>
+
+        <section class="calculator-guide">
+            <h2><i class="fas fa-book"></i> How to Use the Plant Watering Calculator</h2>
+            
+            <div class="guide-section">
+                <p class="guide-intro">Our plant watering calculator is designed to help you determine the perfect watering schedule for your succulents and prevent common watering mistakes. Here's a comprehensive guide on how to use this tool effectively and understand your plant's watering needs.</p>
+
+                <div class="guide-block">
+                    <h3><i class="fas fa-list-ol"></i> Step-by-Step Instructions</h3>
+                    <ol>
+                        <li><strong>Select Your Plant Type:</strong> Choose your specific succulent variety from the dropdown menu.</li>
+                        <li><strong>Enter Pot Size:</strong> Measure your pot's diameter and enter it in your preferred unit (metric or imperial).</li>
+                        <li><strong>Choose Light Exposure:</strong> Select how much direct sunlight your plant receives daily.</li>
+                        <li><strong>Indicate Season:</strong> Pick the current season to account for growth cycles.</li>
+                        <li><strong>Set Humidity Level:</strong> Use the slider to indicate your average indoor humidity.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-block">
+                    <h3><i class="fas fa-lightbulb"></i> Understanding the Results</h3>
+                    <p>The calculator considers multiple factors to generate your personalized watering schedule:</p>
+                    <ul>
+                        <li><strong>Base Frequency:</strong> Initial watering interval based on plant type</li>
+                        <li><strong>Size Adjustments:</strong> Modified for pot size and root system</li>
+                        <li><strong>Environmental Factors:</strong> Adapted for light exposure and humidity</li>
+                        <li><strong>Seasonal Changes:</strong> Adjusted for growth patterns in different seasons</li>
+                    </ul>
+                </div>
+
+                <div class="guide-block">
+                    <h3><i class="fas fa-exclamation-circle"></i> Important Considerations</h3>
+                    <ul>
+                        <li>Monitor your plant's response and adjust the schedule as needed</li>
+                        <li>Consider factors like air circulation and pot material</li>
+                        <li>Watch for signs of over or under-watering</li>
+                        <li>Adjust frequency during extreme weather conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>How do I know if I'm overwatering my succulent?</h3>
+                    <p>Signs of overwatering include yellowing leaves, mushy stems, black spots, and leaves that feel soft and squishy. If you notice any of these symptoms, reduce watering frequency and ensure your pot has proper drainage.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Should I mist my succulents?</h3>
+                    <p>No, misting is not recommended for most succulents. They prefer deep, infrequent watering that allows the soil to dry completely between waterings. Misting can lead to fungal problems and doesn't provide enough water to reach the roots.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I water my succulents on a fixed schedule?</h3>
+                    <p>While our calculator provides a general guideline, it's better to water based on soil moisture rather than a fixed schedule. Check the soil moisture by inserting your finger about an inch deep - if it's completely dry, it's time to water.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Why are my succulent's leaves falling off?</h3>
+                    <p>Leaves falling off can be caused by both overwatering and underwatering. If the leaves are yellow and mushy, it's likely overwatering. If they're dry and shriveled, it's probably underwatering. Use our calculator to find the right balance.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do succulents need different watering in winter?</h3>
+                    <p>Yes, most succulents enter a dormant period in winter and need less water. Reduce watering frequency by about 50% during winter months. Our calculator takes seasonal changes into account when providing recommendations.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What type of water should I use for my succulents?</h3>
+                    <p>Room temperature tap water is generally fine for succulents. If your tap water is very hard, consider using filtered water or collecting rainwater. Avoid using softened water as it can contain harmful salts.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Should I water my succulent if I see wrinkled leaves?</h3>
+                    <p>Wrinkled leaves are usually a sign of underwatering. However, before watering, check the soil moisture first. If the soil is completely dry, give your succulent a thorough watering until water drains from the bottom.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I water propagated succulent leaves?</h3>
+                    <p>Propagated leaves don't need direct watering until they develop roots. Mist the soil surface lightly every few days, or when the soil is completely dry. Once roots develop, transition to normal watering as calculated by our tool.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="../js/components.js"></script>
+    <script src="../js/watering-calculator.js"></script>
+</body>
+</html>

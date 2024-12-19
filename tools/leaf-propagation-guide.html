@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Propagation Guide - Caring For Succulents</title>
+    <meta name="description" content="Learn how to propagate succulent leaves with our interactive guide. Step-by-step instructions on how to grow succulents from leaf cuttings, with tips for successful propagation.">
+    <meta name="keywords" content="grow a succulent from a leaf, how to propagate succulent leaves, how to propagate succulents from leaf, how to grow succulent leaves, grow succulent from cutting, succulent leaf propagation, succulent from leaf, leaf propagation">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Components Script -->
+    <script src="../js/components.js"></script>
+    <style>
+        /* Force high specificity for text visibility */
+        body .propagation-guide .guide-container {
+            background-color: white !important;
+            color: #333333 !important;
+        }
+
+        body .propagation-guide .guide-container p,
+        body .propagation-guide .guide-container li,
+        body .propagation-guide .guide-container div {
+            color: #333333 !important;
+        }
+
+        body .propagation-guide .step-panel {
+            background-color: white !important;
+            color: #333333 !important;
+        }
+
+        body .propagation-guide .step-panel h3 {
+            color: #2c7a51 !important;
+            font-weight: 600 !important;
+        }
+
+        body .propagation-guide .step-details {
+            color: #333333 !important;
+        }
+
+        body .propagation-guide .tools-needed {
+            background-color: #f8f9fa !important;
+        }
+
+        body .propagation-guide .tools-needed h4,
+        body .propagation-guide .tools-needed li {
+            color: #333333 !important;
+        }
+
+        /* Additional styles */
+        .success-icon {
+            color: #2ecc71;
+        }
+        .error-icon {
+            color: #e74c3c;
+        }
+        .tool-link {
+            text-decoration: none;
+            color: #3498db;
+        }
+        
+        .completion-content {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        /* Fix for step content visibility */
+        .step-panel {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .step-panel h3 {
+            color: #2c7a51;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .tools-needed {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+
+        .tools-needed h4 {
+            color: #333333;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .tools-needed ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tools-needed li {
+            color: #333333;
+            margin: 0.8rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .step-details {
+            color: #333333;
+            font-size: 1rem;
+            line-height: 1.6;
+            width: 100%;
+        }
+
+        .preparation-tips {
+            margin-top: 1.5rem;
+            width: 100%;
+        }
+
+        .preparation-tips h4 {
+            color: #333333;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .preparation-tips ol {
+            padding-left: 1.5rem;
+            margin: 0;
+            color: #333333;
+        }
+
+        .preparation-tips li {
+            margin-bottom: 0.8rem;
+            color: #333333;
+            font-weight: 400;
+        }
+
+        /* Container fixes */
+        .guide-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .step-content {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Fix for faded text */
+        .propagation-guide {
+            color: #333333;
+        }
+
+        .propagation-guide p,
+        .propagation-guide li {
+            color: #333333;
+            font-weight: 400;
+        }
+
+        .summary-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .completion-checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .completion-checklist li {
+            margin: 0.8rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .next-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .next-step-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .next-step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .next-step-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .next-step-card h5 {
+            margin: 0.5rem 0;
+            color: var(--primary-color);
+        }
+
+        .next-step-card p {
+            font-size: 0.9rem;
+            margin: 0;
+            color: #666;
+        }
+
+        .tracking-section {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .download-button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            margin: 1rem 0;
+            transition: background 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: var(--primary-dark);
+        }
+
+        .tracking-tip {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .interactive-setup {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .setup-form {
+            margin-top: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .input-with-unit {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .input-with-unit input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .unit-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .range-hint {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: white;
+        }
+
+        .submit-button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            width: 100%;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background: var(--primary-dark);
+        }
+
+        .recommendations-panel {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .recommendation-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .recommendation-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .seo-content {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .blog-content {
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .quick-nav {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .quick-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+
+        .quick-nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.3s;
+        }
+
+        .quick-nav a:hover {
+            color: var(--primary-dark);
+        }
+
+        .section {
+            margin: 3rem 0;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+
+        .benefits-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .benefits-list li:before {
+            content: "✓";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .method-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .method-box h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .step {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .pro-tip {
+            background: #f0f7ff;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .problem-solution {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .problem-solution h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .tips-list {
+            list-style-position: outside !important;
+            padding-left: 1.5rem !important;
+            margin: 1rem 0 !important;
+        }
+
+        .tips-list li {
+            padding-left: 0.5rem !important;
+            margin-bottom: 0.8rem !important;
+            line-height: 1.5 !important;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .faq-item h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .conclusion {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .seo-content {
+                padding: 0 1rem;
+            }
+
+            .method-box,
+            .step,
+            .problem-solution,
+            .faq-item {
+                padding: 1rem;
+            }
+        }
+
+        /* Reset guide content width */
+        .guide-content {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .guide-content .content-section {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .guide-content .content-section > * {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .guide-content h2,
+        .guide-content h3,
+        .guide-content p,
+        .guide-content ul,
+        .guide-content ol {
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        /* Ensure proper text display */
+        .guide-content p {
+            margin-bottom: 1rem !important;
+            line-height: 1.6 !important;
+            color: #333333 !important;
+        }
+
+        /* Force textboxes to be full width */
+        .guide-content .content-section {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .guide-content .content-section p {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .guide-content {
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 0 !important;
+        }
+
+        /* Fix for step-by-step section */
+        #step-by-step.section {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        #step-by-step .step {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 2rem !important;
+        }
+
+        #step-by-step .step h4,
+        #step-by-step .step p,
+        #step-by-step .step ul {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .section {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 2rem !important;
+        }
+
+        .blog-content {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .blog-content .section {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /* Fix list alignment */
+        #step-by-step .step ul {
+            list-style-position: outside !important;
+            padding-left: 1.5rem !important;
+            margin: 1rem 0 !important;
+        }
+
+        #step-by-step .step ul li {
+            padding-left: 0.5rem !important;
+            margin-bottom: 0.5rem !important;
+            line-height: 1.5 !important;
+        }
+    </style>
+</head>
+<body data-page="propagation">
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="guide-page">
+        <div class="page-icon">
+            <i class="fas fa-leaf"></i>
+        </div>
+        <h1 class="main-title">Succulent Leaf Propagation Guide</h1>
+        <h2 class="main-subtitle">Learn How to Grow Succulents from Leaves</h2>
+        <p class="subtitle">Step-by-step interactive guide to successfully propagate succulent leaves</p>
+
+        <section class="propagation-guide">
+            <div class="guide-container">
+                <div class="interactive-setup">
+                    <h3><i class="fas fa-sliders-h"></i> Customize Your Propagation Plan</h3>
+                    <form id="propagationSetup" class="setup-form">
+                        <div class="form-group unit-selector">
+                            <label>Measurement System:</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="imperial" name="units" value="imperial" checked>
+                                    <label for="imperial"><i class="fas fa-ruler"></i> Imperial (inches)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="metric" name="units" value="metric">
+                                    <label for="metric"><i class="fas fa-ruler-vertical"></i> Metric (cm)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="leafSize">Leaf Size:</label>
+                                <div class="input-with-unit">
+                                    <input type="number" id="leafSize" name="leafSize" min="0.5" max="40" step="0.1" required>
+                                    <span class="unit-label">inches</span>
+                                </div>
+                                <div class="range-hint">Measure the length of the leaf</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="season">Current Season:</label>
+                                <select id="season" name="season" required>
+                                    <option value="spring">Spring</option>
+                                    <option value="summer">Summer</option>
+                                    <option value="fall">Fall</option>
+                                    <option value="winter">Winter</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="light">Available Light:</label>
+                                <select id="light" name="light" required>
+                                    <option value="bright-indirect">Bright Indirect Light</option>
+                                    <option value="partial-shade">Partial Shade</option>
+                                    <option value="full-sun">Full Sun</option>
+                                    <option value="low-light">Low Light</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="humidity">Humidity Level:</label>
+                                <select id="humidity" name="humidity" required>
+                                    <option value="normal">Normal (40-50%)</option>
+                                    <option value="low">Low (below 40%)</option>
+                                    <option value="high">High (above 50%)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Propagation Experience:</label>
+                            <select id="experience" name="experience" required>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-calculator"></i> Calculate Personalized Guide
+                        </button>
+                    </form>
+                </div>
+
+                <div id="personalizedRecommendations" class="recommendations-panel" style="display: none;">
+                    <h3><i class="fas fa-clipboard-check"></i> Your Personalized Propagation Plan</h3>
+                    <div class="recommendations-content">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="progress-tracker">
+                    <div class="progress-bar">
+                        <div class="progress" id="progressBar"></div>
+                    </div>
+                    <div class="step-indicators">
+                        <div class="step active" data-step="1">
+                            <i class="fas fa-scissors"></i>
+                            <span>Preparation</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Leaf Selection</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <i class="fas fa-seedling"></i>
+                            <span>Callusing</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <i class="fas fa-fill-drip"></i>
+                            <span>Soil & Water</span>
+                        </div>
+                        <div class="step" data-step="5">
+                            <i class="fas fa-sun"></i>
+                            <span>Growth Care</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-content">
+                    <!-- Step 1: Preparation -->
+                    <div class="step-panel active" id="step1">
+                        <h3>Step 1: Preparation for Leaf Propagation</h3>
+                        <div class="step-details">
+                            <div class="tools-needed">
+                                <h4>Tools Needed:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check success-icon"></i> Clean, sharp scissors or knife</li>
+                                    <li><i class="fas fa-check success-icon"></i> Clean work surface</li>
+                                    <li><i class="fas fa-check success-icon"></i> Rubbing alcohol</li>
+                                    <li><i class="fas fa-check success-icon"></i> Paper towels</li>
+                                </ul>
+                            </div>
+                            <div class="preparation-tips">
+                                <h4>Preparation Steps:</h4>
+                                <ol>
+                                    <li><i class="fas fa-check success-icon"></i> Clean your tools with rubbing alcohol</li>
+                                    <li><i class="fas fa-check success-icon"></i> Prepare a clean, dry workspace</li>
+                                    <li><i class="fas fa-check success-icon"></i> Have paper towels ready for leaf placement</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Leaf Selection -->
+                    <div class="step-panel" id="step2">
+                        <h3>Step 2: Selecting Healthy Leaves</h3>
+                        <div class="step-details">
+                            <div class="leaf-selection-guide">
+                                <h4>Look for these characteristics:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check success-icon"></i> Firm, plump leaves</li>
+                                    <li><i class="fas fa-check success-icon"></i> Healthy color without spots</li>
+                                    <li><i class="fas fa-check success-icon"></i> Mature leaves (not too young or old)</li>
+                                    <li><i class="fas fa-times error-icon"></i> Avoid damaged or discolored leaves</li>
+                                    <li><i class="fas fa-times error-icon"></i> Avoid leaves that are wrinkled or soft</li>
+                                    <li><i class="fas fa-times error-icon"></i> Don't use leaves with signs of pests or disease</li>
+                                </ul>
+                            </div>
+                            <div class="removal-technique">
+                                <h4>Proper Removal Technique:</h4>
+                                <ol>
+                                    <li><i class="fas fa-check success-icon"></i> Gently twist the leaf side to side</li>
+                                    <li><i class="fas fa-check success-icon"></i> Ensure a clean break from the stem</li>
+                                    <li><i class="fas fa-check success-icon"></i> Keep the base intact - no tears</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Callusing -->
+                    <div class="step-panel" id="step3">
+                        <h3>Step 3: Callusing Period</h3>
+                        <div class="step-details">
+                            <div class="callusing-info">
+                                <h4>Callusing Requirements:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check success-icon"></i> Duration: 2-7 days</li>
+                                    <li><i class="fas fa-check success-icon"></i> Temperature: 65-75°F (18-24°C)</li>
+                                    <li><i class="fas fa-check success-icon"></i> Air circulation: Good</li>
+                                    <li><i class="fas fa-check success-icon"></i> Light: Indirect</li>
+                                </ul>
+                            </div>
+                            <div class="callusing-tips">
+                                <h4>Success Indicators:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check success-icon"></i> Wound area is dry and calloused</li>
+                                    <li><i class="fas fa-check success-icon"></i> No soft or mushy spots</li>
+                                    <li><i class="fas fa-check success-icon"></i> Leaf remains firm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Soil & Water -->
+                    <div class="step-panel" id="step4">
+                        <h3>Step 4: Soil Preparation and Watering</h3>
+                        <div class="step-details">
+                            <div class="soil-mix">
+                                <h4>Soil Requirements:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check success-icon"></i> Well-draining succulent mix</li>
+                                    <li><i class="fas fa-check success-icon"></i> 50% mineral grit</li>
+                                    <li><i class="fas fa-check success-icon"></i> Soil depth: <span class="measurement">1 inch</span></li>
+                                    <li><i class="fas fa-times error-icon"></i> Avoid regular potting soil</li>
+                                    <li><i class="fas fa-times error-icon"></i> Don't use moisture-retaining mixes</li>
+                                </ul>
+                                <p>Need help choosing the right pot size? Use our <a href="pot-volume-calculator.html" class="tool-link">Pot Volume Calculator</a> to find the perfect container for your propagated succulents.</p>
+                            </div>
+                            <div class="watering-guide">
+                                <h4>Watering Method:</h4>
+                                <ol>
+                                    <li><i class="fas fa-check success-icon"></i> Mist soil surface lightly</li>
+                                    <li><i class="fas fa-check success-icon"></i> Keep soil barely moist</li>
+                                    <li><i class="fas fa-times error-icon"></i> Avoid direct leaf contact with water</li>
+                                </ol>
+                                <p>Not sure about watering frequency? Check our <a href="plant-watering-calculator.html" class="tool-link">Plant Watering Calculator</a> for personalized watering schedules.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Growth Care -->
+                    <div class="step-panel" id="step5">
+                        <h3>Step 5: Ongoing Care and Growth</h3>
+                        <div class="step-details">
+                            <div class="growth-conditions">
+                                <h4>Optimal Conditions:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check success-icon"></i> Bright, indirect light</li>
+                                    <li><i class="fas fa-check success-icon"></i> Temperature: 70-80°F (21-27°C)</li>
+                                    <li><i class="fas fa-check success-icon"></i> Humidity: 40-50%</li>
+                                </ul>
+                            </div>
+                            <div class="growth-timeline">
+                                <h4>Timeline Expectations:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check success-icon"></i> 2-3 weeks: Roots appear</li>
+                                    <li><i class="fas fa-check success-icon"></i> 4-6 weeks: Tiny leaves form</li>
+                                    <li><i class="fas fa-check success-icon"></i> 2-3 months: Plantlet develops</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Completion Summary -->
+                    <div class="step-panel" id="completion-summary" style="display: none;">
+                        <h3>Congratulations! You're Ready to Start Propagating</h3>
+                        <div class="completion-content">
+                            <div class="summary-box">
+                                <h4><i class="fas fa-check-circle success-icon"></i> Your Propagation Checklist</h4>
+                                <ul class="completion-checklist">
+                                    <li><i class="fas fa-check success-icon"></i> Clean tools and workspace</li>
+                                    <li><i class="fas fa-check success-icon"></i> Healthy leaf selection</li>
+                                    <li><i class="fas fa-check success-icon"></i> Proper callusing time</li>
+                                    <li><i class="fas fa-check success-icon"></i> Well-draining soil mix</li>
+                                    <li><i class="fas fa-check success-icon"></i> Proper watering technique</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="next-steps">
+                                <h4><i class="fas fa-forward"></i> Next Steps</h4>
+                                <div class="next-steps-grid">
+                                    <a href="pot-volume-calculator.html" class="next-step-card">
+                                        <i class="fas fa-ruler-combined"></i>
+                                        <h5>Calculate Pot Size</h5>
+                                        <p>Find the perfect pot size for your propagated succulents</p>
+                                    </a>
+                                    <a href="plant-watering-calculator.html" class="next-step-card">
+                                        <i class="fas fa-tint"></i>
+                                        <h5>Watering Schedule</h5>
+                                        <p>Get a personalized watering schedule for your new plants</p>
+                                    </a>
+                                    <a href="../care/basic-succulent-care.html" class="next-step-card">
+                                        <i class="fas fa-seedling"></i>
+                                        <h5>Care Guide</h5>
+                                        <p>Learn essential care tips for your growing succulents</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="tracking-section">
+                                <h4><i class="fas fa-journal-whills"></i> Track Your Progress</h4>
+                                <button id="downloadChecklist" class="download-button">
+                                    <i class="fas fa-download"></i> Download Propagation Tracker
+                                </button>
+                                <p class="tracking-tip">Keep track of your propagation journey with our printable tracking sheet!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button id="prevStep" class="nav-button" disabled>
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button id="nextStep" class="nav-button">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="guide-disclaimer">
+                <p><i class="fas fa-info-circle"></i> Disclaimer: This succulent leaf propagation guide provides general recommendations based on common practices. Success rates may vary depending on species, environmental conditions, and care provided. Some succulent varieties may not propagate successfully from leaves.</p>
+            </div>
+        </section>
+
+        <section class="seo-content">
+            <h2>The Ultimate Guide to Propagating Succulents: From Rookie to Pro</h2>
+            
+            <div class="blog-content">
+                <p class="intro">
+                    Propagating succulents is hands down one of the most rewarding ways to expand your plant collection without breaking the bank. I've been propagating these beauties for years, and I'm stoked to share everything I've learned about turning one succulent into many.
+                </p>
+
+                <div class="quick-nav">
+                    <h3>What We'll Cover:</h3>
+                    <ul>
+                        <li><a href="#why-propagate">Why Propagate Succulents?</a></li>
+                        <li><a href="#methods">3 Foolproof Methods</a></li>
+                        <li><a href="#step-by-step">Step-by-Step Guide</a></li>
+                        <li><a href="#common-issues">Fixing Common Problems</a></li>
+                        <li><a href="#pro-tips">Pro Tips for Success</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div id="why-propagate" class="section">
+                    <h3>Why You Should Start Propagating Succulents Today</h3>
+                    <ul class="benefits-list">
+                        <li><strong>Free Plants:</strong> Turn one plant into dozens without spending a penny</li>
+                        <li><strong>Low Risk:</strong> Even if you mess up, your original plant stays safe</li>
+                        <li><strong>Perfect for Beginners:</strong> Seriously, if I could do it, anyone can</li>
+                        <li><strong>Quick Results:</strong> See new growth in just 2-4 weeks</li>
+                    </ul>
+                </div>
+
+                <div id="methods" class="section">
+                    <h3>3 Foolproof Methods for Propagating Succulents</h3>
+                    
+                    <div class="method-box">
+                        <h4>1. Leaf Propagation</h4>
+                        <p>My go-to method. Just gently twist off a healthy leaf and let nature do its thing.</p>
+                        <p><strong>Best for:</strong> Echeveria, Sedum, Graptopetalum</p>
+                    </div>
+
+                    <div class="method-box">
+                        <h4>2. Stem Cuttings</h4>
+                        <p>Perfect for leggy plants. Snip, let it callus, plant, and watch it grow.</p>
+                        <p><strong>Best for:</strong> String of Pearls, Burro's Tail, Jade Plant</p>
+                    </div>
+
+                    <div class="method-box">
+                        <h4>3. Offsets/Pups</h4>
+                        <p>The easiest method - just separate baby plants from mama.</p>
+                        <p><strong>Best for:</strong> Aloe, Haworthia, Sempervivum</p>
+                    </div>
+                </div>
+
+                <div id="step-by-step" class="section">
+                    <h3>Step-by-Step Guide to Propagating Succulents</h3>
+                    
+                    <div class="step">
+                        <h4>Step 1: Prep Work</h4>
+                        <ul>
+                            <li>Clean scissors or knife</li>
+                            <li>Well-draining soil mix</li>
+                            <li>Small containers</li>
+                            <li>Spray bottle</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Step 2: Taking Cuttings</h4>
+                        <ul>
+                            <li>Choose healthy leaves/stems</li>
+                            <li>Clean cut or gentle twist</li>
+                            <li>Let them dry for 2-3 days</li>
+                        </ul>
+                        <p class="pro-tip"><strong>Pro Tip:</strong> If the leaf breaks cleanly from the stem, you're golden. If it's mushy or tears, try again.</p>
+                    </div>
+
+                    <div class="step">
+                        <h4>Step 3: The Growing Phase</h4>
+                        <ul>
+                            <li>Place on well-draining soil</li>
+                            <li>Indirect sunlight is key</li>
+                            <li>Mist every few days</li>
+                            <li>Wait for roots (2-4 weeks)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="common-issues" class="section">
+                    <h3>Common Problems and Quick Fixes</h3>
+                    
+                    <div class="problem-solution">
+                        <h4>Rotting Before Rooting</h4>
+                        <p><strong>Fix:</strong> Less water, more patience. Let them callus properly before misting.</p>
+                    </div>
+
+                    <div class="problem-solution">
+                        <h4>No Growth After Weeks</h4>
+                        <p><strong>Fix:</strong> Check lighting (bright but indirect) and temperature (20-25°C is perfect).</p>
+                    </div>
+
+                    <div class="problem-solution">
+                        <h4>Shriveling Leaves</h4>
+                        <p><strong>Fix:</strong> Slightly more frequent misting, but don't overdo it.</p>
+                    </div>
+                </div>
+
+                <div id="pro-tips" class="section">
+                    <h3>Pro Tips for Successful Propagation</h3>
+                    <ul class="tips-list">
+                        <li><strong>Timing is Everything:</strong> Spring and summer are your best friends for propagation</li>
+                        <li><strong>Quality Over Quantity:</strong> One healthy leaf beats ten mediocre ones</li>
+                        <li><strong>Patience Pays Off:</strong> Don't rush the callusing process</li>
+                        <li><strong>Light Matters:</strong> Bright, indirect light is the sweet spot</li>
+                    </ul>
+                </div>
+
+                <div id="faq" class="section">
+                    <h3>Frequently Asked Questions</h3>
+                    
+                    <div class="faq-item">
+                        <h4>How long until I see new growth?</h4>
+                        <p>Typically 2-4 weeks for roots, another 2-4 weeks for tiny leaves. But remember, every plant moves at its own pace.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Can I propagate any succulent?</h4>
+                        <p>No, not all succulents can be propagated from leaves. While most Echeveria, Sedum, and similar species work well, others like Haworthia and Aloe typically require pup division or stem cuttings.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Why do my leaves keep rotting?</h4>
+                        <p>Usually too much water too soon. Let them callus first, then mist lightly every few days.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Do I need rooting hormone?</h4>
+                        <p>Nope! Succulents are propagation pros all on their own.</p>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <p>Propagating succulents is a game-changer for growing your collection. Start with one method, learn from your wins and losses, and before you know it, you'll be propagating succulents like a pro.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide-content">
+            <h2>Complete Guide to Succulent Leaf Propagation</h2>
+            <div class="content-section">
+                <h3>Understanding Succulent Leaf Propagation</h3>
+                <p>Propagating succulents from leaves is a rewarding way to expand your collection. This method of growing succulents from leaf cuttings allows you to create new plants from existing ones, making it both cost-effective and satisfying.</p>
+                
+                <h3>Why Choose Leaf Propagation?</h3>
+                <ul>
+                    <li><i class="fas fa-check success-icon"></i> Cost-effective way to grow your collection</li>
+                    <li><i class="fas fa-check success-icon"></i> High success rate with proper technique</li>
+                    <li><i class="fas fa-check success-icon"></i> Multiple plants from a single parent</li>
+                    <li><i class="fas fa-check success-icon"></i> Preserves special varieties</li>
+                </ul>
+
+                <h3>Best Succulents for Leaf Propagation</h3>
+                <p>While many succulents can be propagated from leaves, some species are particularly well-suited for this method:</p>
+                <ul>
+                    <li><i class="fas fa-check success-icon"></i> Echeveria varieties</li>
+                    <li><i class="fas fa-check success-icon"></i> Sedum species</li>
+                    <li><i class="fas fa-check success-icon"></i> Graptoveria</li>
+                    <li><i class="fas fa-check success-icon"></i> Pachyveria</li>
+                    <li><i class="fas fa-check success-icon"></i> Graptopetalum</li>
+                </ul>
+
+                <h3>Common Challenges and Solutions</h3>
+                <div class="challenges-grid">
+                    <div class="challenge">
+                        <h4><i class="fas fa-exclamation-circle error-icon"></i>Rotting Leaves</h4>
+                        <p>Solution: Ensure proper callusing and avoid overwatering. Use our <a href="plant-watering-calculator.html" class="tool-link">Plant Watering Calculator</a> for guidance.</p>
+                    </div>
+                    <div class="challenge">
+                        <h4><i class="fas fa-exclamation-circle error-icon"></i>No Root Development</h4>
+                        <p>Solution: Maintain consistent temperature and humidity. Choose an appropriately sized container using our <a href="pot-volume-calculator.html" class="tool-link">Pot Volume Calculator</a>.</p>
+                    </div>
+                    <div class="challenge">
+                        <h4><i class="fas fa-exclamation-circle error-icon"></i>Slow Growth</h4>
+                        <p>Solution: Provide adequate light and proper nutrition. Follow our watering guidelines with the <a href="plant-watering-calculator.html" class="tool-link">Plant Watering Calculator</a>.</p>
+                    </div>
+                </div>
+
+                <h3>Advanced Tips for Success</h3>
+                <ol>
+                    <li><i class="fas fa-check success-icon"></i> Use fresh, healthy leaves from actively growing plants</li>
+                    <li><i class="fas fa-check success-icon"></i> Maintain consistent environmental conditions</li>
+                    <li><i class="fas fa-check success-icon"></i> Practice patience - growth takes time</li>
+                    <li><i class="fas fa-check success-icon"></i> Keep detailed records of your propagation attempts</li>
+                    <li><i class="fas fa-check success-icon"></i> Experiment with different techniques</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions About Leaf Propagation</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>How long does it take to grow a succulent from a leaf?</h3>
+                    <p>Typically, it takes 2-3 weeks for roots to appear, and 4-6 weeks for tiny leaves to form. A fully formed plantlet usually develops within 2-3 months, though timing can vary by species and conditions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Why aren't my succulent leaves growing roots?</h3>
+                    <p>Common reasons include insufficient callusing time, overwatering, or poor environmental conditions. Ensure leaves are fully callused before placing on soil, and maintain proper temperature and humidity levels.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Should I water propagating succulent leaves?</h3>
+                    <p>Only mist the soil surface lightly once roots appear. Avoid getting water on the leaf itself, as this can cause rotting. The leaf contains enough moisture to sustain the growing process.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can all succulents be propagated from leaves?</h3>
+                    <p>No, not all succulents can be propagated from leaves. While most Echeveria, Sedum, and similar species work well, others like Haworthia and Aloe typically require pup division or stem cuttings.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What's the best time to propagate succulent leaves?</h3>
+                    <p>Spring and early summer are ideal for leaf propagation, as this is when succulents are in their active growing phase. Avoid propagating during winter when growth naturally slows.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Why do my propagated leaves keep dying?</h3>
+                    <p>Common causes include overwatering, insufficient light, or poor leaf selection. Choose healthy, plump leaves, ensure proper callusing, and maintain appropriate growing conditions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>When should I remove the mother leaf?</h3>
+                    <p>Let the mother leaf naturally wither and fall off. It provides nutrients to the new plant, and removing it too early can harm the developing plantlet.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I know if my leaf propagation is successful?</h3>
+                    <p>Signs of successful propagation include root development, tiny leaves forming at the base, and the mother leaf remaining firm. If the leaf turns mushy or black, it has likely failed.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Unit conversion functionality
+        const unitInputs = document.querySelectorAll('input[name="units"]');
+        const measurements = document.querySelectorAll('.measurement');
+
+        function updateMeasurements(unit) {
+            measurements.forEach(measurement => {
+                const value = unit === 'metric' ? '2.5 cm' : '1 inch';
+                measurement.textContent = value;
+            });
+        }
+
+        unitInputs.forEach(input => {
+            input.addEventListener('change', (e) => {
+                updateMeasurements(e.target.value);
+            });
+        });
+
+        // Step navigation functionality
+        let currentStep = 1;
+        const totalSteps = 5;
+        const prevButton = document.getElementById('prevStep');
+        const nextButton = document.getElementById('nextStep');
+        const progressBar = document.getElementById('progressBar');
+
+        function updateStep(direction) {
+            const currentPanel = document.querySelector(`.step-panel[id="step${currentStep}"]`);
+            const currentIndicator = document.querySelector(`.step[data-step="${currentStep}"]`);
+            
+            currentStep += direction;
+            
+            const nextPanel = document.querySelector(`.step-panel[id="step${currentStep}"]`);
+            const nextIndicator = document.querySelector(`.step[data-step="${currentStep}"]`);
+            
+            currentPanel.classList.remove('active');
+            currentIndicator.classList.remove('active');
+            nextPanel.classList.add('active');
+            nextIndicator.classList.add('active');
+            
+            // Update buttons
+            prevButton.disabled = currentStep === 1;
+            nextButton.textContent = currentStep === totalSteps ? 'Finish' : 'Next';
+            
+            // Update progress bar
+            const progress = ((currentStep - 1) / (totalSteps - 1)) * 100;
+            progressBar.style.width = `${progress}%`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (currentStep > 1) {
+                updateStep(-1);
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentStep < totalSteps) {
+                updateStep(1);
+            } else {
+                // Show completion summary
+                document.querySelectorAll('.step-panel').forEach(panel => {
+                    panel.style.display = 'none';
+                });
+                document.getElementById('completion-summary').style.display = 'block';
+                
+                // Update progress bar to 100%
+                progressBar.style.width = '100%';
+                
+                // Disable next button
+                nextButton.disabled = true;
+            }
+        });
+
+        // Add download functionality
+        document.getElementById('downloadChecklist').addEventListener('click', () => {
+            // Create the content for the tracking sheet
+            const content = `Succulent Leaf Propagation Tracking Sheet
+
+Date Started: _________________
+Plant Species: ________________
+
+Propagation Milestones:
+□ Leaf removed: Date ________
+□ Callus formed: Date ________
+□ Roots appeared: Date ________
+□ Baby leaves formed: Date ________
+□ Ready for own pot: Date ________
+
+Care Notes:
+Temperature: __________
+Light Conditions: __________
+Watering Schedule: __________
+
+Weekly Observations:
+Week 1: ____________________
+Week 2: ____________________
+Week 3: ____________________
+Week 4: ____________________
+
+Tips:
+- Keep soil slightly moist
+- Provide bright, indirect light
+- Maintain warm temperature
+- Be patient - growth takes time!
+
+Success Indicators:
+□ Leaf remains firm
+□ Roots are growing
+□ New leaves are forming
+□ Mother leaf is healthy
+
+Questions/Notes:
+_________________________
+_________________________
+_________________________`;
+
+            // Create blob and download
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'succulent-propagation-tracker.txt';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        });
+
+        // Unit conversion functionality for interactive form
+        const unitInputsInteractive = document.querySelectorAll('input[name="units"]');
+        const leafSizeInputInteractive = document.getElementById('leafSize');
+        const unitLabelInteractive = document.querySelector('.unit-label');
+
+        function updateUnitsInteractive(unit) {
+            const isMetric = unit === 'metric';
+            const currentValue = parseFloat(leafSizeInputInteractive.value);
+            
+            if (!isNaN(currentValue)) {
+                leafSizeInputInteractive.value = isMetric 
+                    ? (currentValue * 2.54).toFixed(1) 
+                    : (currentValue / 2.54).toFixed(1);
+            }
+
+            leafSizeInputInteractive.min = isMetric ? '1' : '0.5';
+            leafSizeInputInteractive.max = isMetric ? '100' : '40';
+            unitLabelInteractive.textContent = isMetric ? 'cm' : 'inches';
+        }
+
+        unitInputsInteractive.forEach(input => {
+            input.addEventListener('change', (e) => {
+                updateUnitsInteractive(e.target.value);
+            });
+        });
+
+        // Form submission and recommendations
+        document.getElementById('propagationSetup').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            const recommendations = generateRecommendations(data);
+            
+            displayRecommendations(recommendations);
+        });
+
+        function generateRecommendations(data) {
+            const recommendations = {
+                timing: getTimingRecommendation(data.season),
+                environment: getEnvironmentRecommendation(data.light, data.humidity),
+                care: getCareRecommendation(data.experience),
+                timeline: getTimelineEstimate(data.season, data.light)
+            };
+
+            return recommendations;
+        }
+
+        function getTimingRecommendation(season) {
+            const timingMap = {
+                spring: "Excellent timing! Spring is ideal for propagation with warming temperatures and increasing daylight.",
+                summer: "Good timing, but provide extra humidity and shade during hot afternoons.",
+                fall: "Acceptable timing. Growth may be slower as daylight decreases.",
+                winter: "Challenging timing. Consider using grow lights and maintaining warmer temperatures."
+            };
+            return timingMap[season];
+        }
+
+        function getEnvironmentRecommendation(light, humidity) {
+            let recommendation = "";
+            
+            switch(light) {
+                case 'bright-indirect':
+                    recommendation = "Perfect light conditions! Place 3-4 feet from a south or west-facing window.";
+                    break;
+                case 'partial-shade':
+                    recommendation = "Acceptable light. Move closer to light source if leaves stretch.";
+                    break;
+                case 'full-sun':
+                    recommendation = "Provide shade during harsh afternoon sun to prevent leaf burn.";
+                    break;
+                case 'low-light':
+                    recommendation = "Consider supplementing with grow lights for better results.";
+                    break;
+            }
+
+            switch(humidity) {
+                case 'low':
+                    recommendation += " Increase humidity by using a pebble tray or light misting.";
+                    break;
+                case 'high':
+                    recommendation += " Ensure good air circulation to prevent fungal issues.";
+                    break;
+            }
+
+            return recommendation;
+        }
+
+        function getCareRecommendation(experience) {
+            const careMap = {
+                beginner: "Start with easy-to-propagate species like Echeveria or Sedum. Check leaves daily and maintain consistent conditions.",
+                intermediate: "You can try slightly challenging species like Graptopetalum or Pachyphytum. Experiment with different techniques.",
+                advanced: "Consider propagating rare species or trying advanced techniques like leaf wedge cutting."
+            };
+            return careMap[experience];
+        }
+
+        function getTimelineEstimate(season, light) {
+            let baseTime = 4; // weeks
+            
+            // Adjust for season
+            if (season === 'winter') baseTime += 2;
+            if (season === 'summer') baseTime -= 1;
+            
+            // Adjust for light
+            if (light === 'low-light') baseTime += 2;
+            if (light === 'full-sun') baseTime -= 1;
+
+            return `Estimated timeline:
+                • Callusing: 3-7 days
+                • Root development: ${baseTime}-${baseTime + 2} weeks
+                • Baby leaves: ${baseTime + 2}-${baseTime + 4} weeks`;
+        }
+
+        function displayRecommendations(recommendations) {
+            const content = document.querySelector('.recommendations-content');
+            content.innerHTML = `
+                <div class="recommendation-item">
+                    <h4><i class="fas fa-clock"></i> Timing</h4>
+                    <p>${recommendations.timing}</p>
+                </div>
+                <div class="recommendation-item">
+                    <h4><i class="fas fa-sun"></i> Environment Setup</h4>
+                    <p>${recommendations.environment}</p>
+                </div>
+                <div class="recommendation-item">
+                    <h4><i class="fas fa-seedling"></i> Care Instructions</h4>
+                    <p>${recommendations.care}</p>
+                </div>
+                <div class="recommendation-item">
+                    <h4><i class="fas fa-calendar-alt"></i> Timeline</h4>
+                    <p>${recommendations.timeline}</p>
+                </div>
+            `;
+
+            document.getElementById('personalizedRecommendations').style.display = 'block';
+            
+            // Scroll to recommendations
+            document.getElementById('personalizedRecommendations').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</body>
+</html>

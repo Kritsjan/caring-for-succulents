@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://caringforsucculents.com/sitemap.xml
+
+# Allow all bots to access everything
+# Point to sitemap for better indexing

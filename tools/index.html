@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Succulent Care Tools - Caring For Succulents</title>
+    <meta name="description" content="Discover our collection of free tools for succulent care. Calculate watering schedules, pot volumes, and learn about leaf propagation.">
+    <meta name="keywords" content="succulent tools, succulent calculator, pot volume calculator, watering calculator, propagation guide">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tool-card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-content h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .tool-content p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .tool-link {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .tool-link:hover {
+            background: #388E3C;
+        }
+
+        .tools-header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #f8f9fa;
+            margin-bottom: 2rem;
+        }
+
+        .tools-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tools-header p {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            .tools-header {
+                padding: 2rem 1rem;
+            }
+
+            .tools-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    
+    <!-- Components Script -->
+    <script src="../js/components.js"></script>
+</head>
+<body data-page="tools">
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="tools-header">
+            <h1>Succulent Care Tools</h1>
+            <p>Explore our collection of free tools designed to help you take better care of your succulents. From calculating watering schedules to determining the perfect pot size, we've got you covered.</p>
+        </div>
+
+        <div class="tools-grid">
+            <div class="tool-card">
+                <div class="tool-content">
+                    <h2>Watering Calculator</h2>
+                    <p>Calculate the perfect watering schedule for your succulents based on various factors like climate, season, and pot size.</p>
+                    <a href="plant-watering-calculator.html" class="tool-link">Calculate Watering Schedule</a>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-content">
+                    <h2>Pot Volume Calculator</h2>
+                    <p>Determine the volume of your plant pots to ensure proper soil quantity and root space for your succulents.</p>
+                    <a href="pot-volume-calculator.html" class="tool-link">Calculate Pot Volume</a>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-content">
+                    <h2>Leaf Propagation Guide</h2>
+                    <p>Learn how to propagate succulents from leaves with our comprehensive, step-by-step interactive guide.</p>
+                    <a href="leaf-propagation-guide.html" class="tool-link">View Propagation Guide</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>

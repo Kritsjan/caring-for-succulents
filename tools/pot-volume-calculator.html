@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pot Volume Calculator - Caring For Succulents</title>
+    <meta name="description" content="Use our pot volume calculator for succulents to determine the ideal pot size for your plants. Get personalized pot size recommendations based on your succulent's current size and growth rate.">
+    <meta name="keywords" content="pot volume calculator for succulents, plant pot volume calculator succulents, pot size calculator, pot meter, succulent pot size">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Pot Volume Calculator for Succulents - Find the Perfect Pot Size">
+    <meta property="og:description" content="Use our pot volume calculator for succulents to determine the ideal pot size for your plants. Get personalized pot size recommendations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caringforsucculents.com/tools/pot-volume-calculator">
+    <meta property="og:image" content="https://caringforsucculents.com/images/pot-calculator-og.jpg">
+    <meta property="og:image:alt" content="Succulent in a perfectly sized pot">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pot Volume Calculator for Succulents">
+    <meta name="twitter:description" content="Calculate the perfect pot size for your succulents with our easy-to-use calculator.">
+    <meta name="twitter:image" content="https://caringforsucculents.com/images/pot-calculator-og.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://caringforsucculents.com/tools/pot-volume-calculator">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Components Script -->
+    <script src="../js/components.js"></script>
+</head>
+<body data-page="pot">
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="calculator-page" id="main-content">
+        <div class="page-icon">
+            <i class="fas fa-ruler-combined"></i>
+        </div>
+        <h1 class="main-title">Pot Volume Calculator for Succulents</h1>
+        <h2 class="main-subtitle">Find the Perfect Pot Size</h2>
+        <p class="subtitle">Get personalized pot size recommendations based on your succulent's current size and growth rate</p>
+        
+        <section class="calculator-section">
+            <div class="calculator-container">
+                <form id="potCalculator" class="calculator-form">
+                    <div class="form-group unit-selector">
+                        <label id="units-label">Measurement System:</label>
+                        <div class="radio-group" role="radiogroup" aria-labelledby="units-label">
+                            <div class="radio-item">
+                                <input type="radio" id="imperial" name="units" value="imperial" checked aria-describedby="imperial-description">
+                                <label for="imperial"><i class="fas fa-ruler" aria-hidden="true"></i> Imperial (inches)</label>
+                                <span id="imperial-description" class="sr-only">Use imperial measurements in inches</span>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="metric" name="units" value="metric" aria-describedby="metric-description">
+                                <label for="metric"><i class="fas fa-ruler-vertical" aria-hidden="true"></i> Metric (cm)</label>
+                                <span id="metric-description" class="sr-only">Use metric measurements in centimeters</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="plantWidth" id="width-label">Current Plant Width: <span class="unit-label">(inches)</span></label>
+                        <input type="number" id="plantWidth" name="plantWidth" min="0.5" max="24" step="0.5" required 
+                               aria-labelledby="width-label" aria-describedby="width-description">
+                        <span id="width-description" class="sr-only">Enter the width of your plant</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="plantHeight" id="height-label">Current Plant Height: <span class="unit-label">(inches)</span></label>
+                        <input type="number" id="plantHeight" name="plantHeight" min="0.5" max="24" step="0.5" required
+                               aria-labelledby="height-label" aria-describedby="height-description">
+                        <span id="height-description" class="sr-only">Enter the height of your plant</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="growth-label">Growth Rate:</label>
+                        <div class="radio-group" role="radiogroup" aria-labelledby="growth-label">
+                            <div class="radio-item">
+                                <input type="radio" id="slowGrowth" name="growthRate" value="slow" required aria-describedby="slow-description">
+                                <label for="slowGrowth"><i class="fas fa-seedling" aria-hidden="true"></i> Slow</label>
+                                <span id="slow-description" class="sr-only">Slow growing plant</span>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="moderateGrowth" name="growthRate" value="moderate" aria-describedby="moderate-description">
+                                <label for="moderateGrowth"><i class="fas fa-leaf" aria-hidden="true"></i> Moderate</label>
+                                <span id="moderate-description" class="sr-only">Moderately growing plant</span>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="fastGrowth" name="growthRate" value="fast" aria-describedby="fast-description">
+                                <label for="fastGrowth"><i class="fas fa-tree" aria-hidden="true"></i> Fast</label>
+                                <span id="fast-description" class="sr-only">Fast growing plant</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="potShape">Preferred Pot Shape:</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="roundPot" name="potShape" value="round" required>
+                                <label for="roundPot"><i class="fas fa-circle"></i> Round</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="squarePot" name="potShape" value="square">
+                                <label for="squarePot"><i class="fas fa-square"></i> Square</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="calculate-button">
+                        <i class="fas fa-calculator"></i> Calculate Pot Size
+                    </button>
+                </form>
+
+                <div id="results" class="results-container hidden">
+                    <h3>Recommended Pot Sizes for Your Succulent</h3>
+                    <div class="result-group">
+                        <div class="result-item">
+                            <h4>Minimum Size</h4>
+                            <p id="minSize"></p>
+                            <p class="dimension-example" id="minDimensions"></p>
+                        </div>
+                        <div class="result-item">
+                            <h4>Ideal Size</h4>
+                            <p id="idealSize"></p>
+                            <p class="dimension-example" id="idealDimensions"></p>
+                        </div>
+                        <div class="result-item">
+                            <h4>Maximum Size</h4>
+                            <p id="maxSize"></p>
+                            <p class="dimension-example" id="maxDimensions"></p>
+                        </div>
+                    </div>
+                    <div class="volume-details">
+                        <p id="volumeDetails"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculator-disclaimer">
+                <p><i class="fas fa-info-circle"></i> Disclaimer: This pot volume calculator for succulents provides general recommendations based on typical growth patterns. Individual plant needs may vary based on species, growing conditions, and other factors. Always monitor your plant's growth and adjust pot sizes accordingly.</p>
+            </div>
+        </section>
+
+        <section class="calculator-guide">
+            <h2 class="section-title"><i class="fas fa-book"></i> How to Use the Pot Volume Calculator for Succulents</h2>
+            <div class="guide-content">
+                <div class="guide-intro">
+                    <p>Our pot volume calculator helps you determine the ideal pot size for your succulents based on their current dimensions and growth rate. Follow these simple steps to get accurate recommendations:</p>
+                </div>
+                
+                <div class="guide-steps">
+                    <ol>
+                        <li>
+                            <h3>Choose Your Measurement System</h3>
+                            <p>Select either imperial (inches) or metric (centimeters) based on your preference.</p>
+                        </li>
+                        
+                        <li>
+                            <h3>Measure Plant Width</h3>
+                            <p>Using a ruler or measuring tape, measure the width of your succulent at its widest point.</p>
+                            <div class="measurement-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Tip: Include any spreading leaves or rosettes in your measurement.</p>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <h3>Measure Plant Height</h3>
+                            <p>Measure from the soil surface to the tallest point of your plant.</p>
+                            <div class="measurement-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Tip: Don't include the current pot height in your measurement.</p>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <h3>Select Growth Rate</h3>
+                            <p>Choose your succulent's growth rate:</p>
+                            <ul>
+                                <li><strong>Slow:</strong> Less than 2 inches (5 cm) per year</li>
+                                <li><strong>Moderate:</strong> 2-4 inches (5-10 cm) annually</li>
+                                <li><strong>Fast:</strong> More than 4 inches (10 cm) per year</li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <h3>Choose Pot Shape</h3>
+                            <p>Select either round or square based on your preference and growing space.</p>
+                            <div class="shape-comparison">
+                                <div class="shape-item">
+                                    <i class="fas fa-circle"></i>
+                                    <p><strong>Round:</strong> Better water distribution</p>
+                                </div>
+                                <div class="shape-item">
+                                    <i class="fas fa-square"></i>
+                                    <p><strong>Square:</strong> Maximizes space</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="guide-results">
+                    <h3>Understanding Your Results</h3>
+                    <p>The calculator will provide three measurements:</p>
+                    <ul>
+                        <li><strong>Minimum Size:</strong> The smallest pot size suitable for your plant</li>
+                        <li><strong>Ideal Size:</strong> The recommended optimal pot size</li>
+                        <li><strong>Maximum Size:</strong> The largest suitable pot size</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-content">
+            <h2>Understanding Pot Sizes for Healthy Succulent Growth</h2>
+            <p>Choosing the right pot size is crucial for the health and growth of your succulents. Our pot volume calculator for succulents helps you make informed decisions about container sizes, ensuring optimal growing conditions for your plants.</p>
+            
+            <h3>Why Pot Size Matters for Succulents</h3>
+            <p>The right pot size provides several benefits for your succulent:</p>
+            <ul>
+                <li>Proper root development and growth</li>
+                <li>Optimal soil moisture levels</li>
+                <li>Prevention of root rot and other issues</li>
+                <li>Support for the plant's structure</li>
+            </ul>
+
+            <h3>Signs Your Succulent Needs a Larger Pot</h3>
+            <ul>
+                <li>Roots growing through drainage holes</li>
+                <li>Visible roots at the soil surface</li>
+                <li>Plant becoming top-heavy</li>
+                <li>Slowed growth despite proper care</li>
+                <li>Soil drying out very quickly</li>
+            </ul>
+
+            <h3>Tips for Choosing the Right Pot Size</h3>
+            <ol>
+                <li>Allow 1-2 inches of space between the plant and pot edge</li>
+                <li>Consider the growth rate when sizing up</li>
+                <li>Don't oversize - succulents prefer snug pots</li>
+                <li>Ensure proper drainage holes</li>
+                <li>Account for multiple plants if planting together</li>
+            </ol>
+
+            <h3>Common Pot Sizing Mistakes to Avoid</h3>
+            <p>When using our pot volume calculator for succulents, be aware of these common mistakes:</p>
+            <ul>
+                <li>Choosing pots that are too large</li>
+                <li>Ignoring the plant's growth rate</li>
+                <li>Not considering the pot's depth</li>
+                <li>Forgetting about drainage requirements</li>
+            </ul>
+
+            <div class="calculator-cta">
+                <p>Use our pot volume calculator above to find the perfect pot size for your succulent. Remember to consider both current size and future growth when making your selection.</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions About Pot Sizes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>How often should I repot my succulent?</h3>
+                    <p>Most succulents need repotting every 12-18 months. Fast-growing varieties may need repotting annually, while slow-growing ones can stay in the same pot for 2-3 years. Use our pot volume calculator for succulents to determine the right size when repotting.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What happens if I use a pot that's too big?</h3>
+                    <p>An oversized pot can retain too much moisture, leading to root rot. It's better to use a pot that's slightly snug rather than too large. Our plant pot volume calculator helps prevent oversizing issues.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Should I choose a deep or shallow pot?</h3>
+                    <p>Most succulents have shallow root systems and prefer wider, shallower pots. However, some varieties with tap roots need deeper pots. Consider your specific plant's root structure when using the pot size calculator.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I plant multiple succulents in one pot?</h3>
+                    <p>Yes, but you'll need to increase the pot size accordingly. Add up the space needed for each plant and use our pot volume calculator for succulents to determine the appropriate size for the group.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Why does pot shape matter?</h3>
+                    <p>Different pot shapes affect water distribution and root growth patterns. Round pots provide even moisture distribution, while square pots maximize space. Choose based on your plant's needs and growing conditions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I know if my pot has good drainage?</h3>
+                    <p>A good pot should have adequate drainage holes and allow water to flow freely. When sizing up using our pot meter, ensure the new pot has proper drainage to prevent water-logging.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Should I use the same size pot when repotting?</h3>
+                    <p>If your plant hasn't grown significantly, you can reuse the same size. However, if it's outgrown its current pot, use our pot volume calculator for succulents to determine the appropriate size increase.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What's the best material for succulent pots?</h3>
+                    <p>Terra cotta and ceramic are excellent choices as they're porous and help prevent overwatering. When using our plant pot volume calculator, consider the pot material as it can affect moisture retention.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Get DOM elements
+        const unitInputs = document.querySelectorAll('input[name="units"]');
+        const unitLabels = document.querySelectorAll('.unit-label');
+        const widthInput = document.getElementById('plantWidth');
+        const heightInput = document.getElementById('plantHeight');
+
+        // Update input ranges and labels based on selected unit
+        function updateUnitSystem(unit) {
+            const isMetric = unit === 'metric';
+            const unitText = isMetric ? '(cm)' : '(inches)';
+            
+            // Update labels
+            unitLabels.forEach(label => label.textContent = unitText);
+            
+            // Update input ranges
+            if (isMetric) {
+                widthInput.min = "1";
+                widthInput.max = "60";
+                widthInput.step = "1";
+                heightInput.min = "1";
+                heightInput.max = "60";
+                heightInput.step = "1";
+                
+                // Convert current values to metric if they exist
+                if (widthInput.value) {
+                    widthInput.value = (parseFloat(widthInput.value) * 2.54).toFixed(1);
+                }
+                if (heightInput.value) {
+                    heightInput.value = (parseFloat(heightInput.value) * 2.54).toFixed(1);
+                }
+            } else {
+                widthInput.min = "0.5";
+                widthInput.max = "24";
+                widthInput.step = "0.5";
+                heightInput.min = "0.5";
+                heightInput.max = "24";
+                heightInput.step = "0.5";
+                
+                // Convert current values to imperial if they exist
+                if (widthInput.value) {
+                    widthInput.value = (parseFloat(widthInput.value) / 2.54).toFixed(1);
+                }
+                if (heightInput.value) {
+                    heightInput.value = (parseFloat(heightInput.value) / 2.54).toFixed(1);
+                }
+            }
+        }
+
+        // Add event listeners for unit switching
+        unitInputs.forEach(input => {
+            input.addEventListener('change', (e) => {
+                updateUnitSystem(e.target.value);
+            });
+        });
+
+        document.getElementById('potCalculator').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const width = parseFloat(document.getElementById('plantWidth').value);
+            const height = parseFloat(document.getElementById('plantHeight').value);
+            const growthRate = document.querySelector('input[name="growthRate"]:checked').value;
+            const potShape = document.querySelector('input[name="potShape"]:checked').value;
+            const units = document.querySelector('input[name="units"]:checked').value;
+
+            // Convert measurements to inches for calculations if metric
+            const widthInches = units === 'metric' ? width / 2.54 : width;
+            const heightInches = units === 'metric' ? height / 2.54 : height;
+
+            // Growth rate multipliers
+            const growthMultipliers = {
+                slow: 1.2,
+                moderate: 1.5,
+                fast: 2.0
+            };
+
+            // Calculate base pot size (in inches)
+            const baseSize = Math.max(widthInches, heightInches) * growthMultipliers[growthRate];
+            
+            // Calculate volumes and dimensions
+            let minSize, idealSize, maxSize;
+            let minDims, idealDims, maxDims;
+
+            if (potShape === 'round') {
+                // πr²h for cylindrical pots
+                const radius = baseSize / 2;
+                minSize = Math.round(Math.PI * Math.pow(radius * 0.8, 2) * (heightInches * 1.2));
+                idealSize = Math.round(Math.PI * Math.pow(radius, 2) * (heightInches * 1.5));
+                maxSize = Math.round(Math.PI * Math.pow(radius * 1.2, 2) * (heightInches * 1.8));
+
+                // Calculate example dimensions (diameter x height)
+                const getDimensions = (radius, height, isMetric) => {
+                    const diameter = 2 * radius;
+                    if (isMetric) {
+                        return `${Math.round(diameter * 2.54)} × ${Math.round(height * 2.54)} cm (diameter × height)`;
+                    }
+                    return `${diameter.toFixed(1)} × ${height.toFixed(1)} inches (diameter × height)`;
+                };
+
+                minDims = getDimensions(radius * 0.8, heightInches * 1.2, units === 'metric');
+                idealDims = getDimensions(radius, heightInches * 1.5, units === 'metric');
+                maxDims = getDimensions(radius * 1.2, heightInches * 1.8, units === 'metric');
+            } else {
+                // l×w×h for square pots
+                minSize = Math.round(Math.pow(baseSize * 0.8, 2) * (heightInches * 1.2));
+                idealSize = Math.round(Math.pow(baseSize, 2) * (heightInches * 1.5));
+                maxSize = Math.round(Math.pow(baseSize * 1.2, 2) * (heightInches * 1.8));
+
+                // Calculate example dimensions (width × depth × height)
+                const getDimensions = (size, height, isMetric) => {
+                    if (isMetric) {
+                        return `${Math.round(size * 2.54)} × ${Math.round(size * 2.54)} × ${Math.round(height * 2.54)} cm (width × depth × height)`;
+                    }
+                    return `${size.toFixed(1)} × ${size.toFixed(1)} × ${height.toFixed(1)} inches (width × depth × height)`;
+                };
+
+                minDims = getDimensions(baseSize * 0.8, heightInches * 1.2, units === 'metric');
+                idealDims = getDimensions(baseSize, heightInches * 1.5, units === 'metric');
+                maxDims = getDimensions(baseSize * 1.2, heightInches * 1.8, units === 'metric');
+            }
+
+            // Convert volumes to metric if necessary
+            if (units === 'metric') {
+                minSize = Math.round(minSize * 16.387064);
+                idealSize = Math.round(idealSize * 16.387064);
+                maxSize = Math.round(maxSize * 16.387064);
+            }
+
+            // Display results with appropriate units
+            const volumeUnit = units === 'metric' ? 'cubic centimeters (cm³)' : 'cubic inches (in³)';
+            document.getElementById('minSize').textContent = `${minSize} ${volumeUnit}`;
+            document.getElementById('idealSize').textContent = `${idealSize} ${volumeUnit}`;
+            document.getElementById('maxSize').textContent = `${maxSize} ${volumeUnit}`;
+
+            // Display example dimensions
+            document.getElementById('minDimensions').textContent = `Example: ${minDims}`;
+            document.getElementById('idealDimensions').textContent = `Example: ${idealDims}`;
+            document.getElementById('maxDimensions').textContent = `Example: ${maxDims}`;
+            
+            const shape = potShape === 'round' ? 'cylindrical' : 'square';
+            document.getElementById('volumeDetails').textContent = 
+                `Based on your succulent's current size and ${growthRate} growth rate, we recommend a ${shape} pot with a volume between ${minSize} and ${maxSize} ${volumeUnit}. The ideal size is approximately ${idealSize} ${volumeUnit}.`;
+
+            document.getElementById('results').classList.remove('hidden');
+        });
+
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            this.setAttribute('aria-expanded', 
+                this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
+            );
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navLinks = document.querySelector('.nav-links');
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (navLinks.classList.contains('active') && 
+                !event.target.closest('.nav-links') && 
+                !event.target.closest('.mobile-menu-btn')) {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
