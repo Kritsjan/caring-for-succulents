@@ -2478,6 +2478,84 @@ header.main-header .logo h1 {
         gap: 1rem;
     }
 }
+
+/* 404 Error Page Styles */
+.error-page {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.error-container {
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.error-page h1 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.error-page p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.error-actions .button {
+    min-width: 150px;
+}
+
+.suggested-content {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.suggested-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.suggested-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.suggested-content li {
+    margin: 0.5rem 0;
+}
+
+.suggested-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.suggested-content a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 /* Override header styles - place at the end of style.css */
 body header.main-header {
     background-color: var(--primary-color) !important;
@@ -2557,7 +2635,7 @@ body header.main-header .nav-container .logo h1 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow-sm);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .featured-post-card:hover {
@@ -2615,4 +2693,81 @@ body header.main-header .nav-container .logo h1 {
     .featured-posts-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* 404 Error Page Styles */
+.error-page {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.error-container {
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.error-page h1 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.error-page p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.error-actions .button {
+    min-width: 150px;
+}
+
+.suggested-content {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.suggested-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.suggested-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.suggested-content li {
+    margin: 0.5rem 0;
+}
+
+.suggested-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.suggested-content a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
 }

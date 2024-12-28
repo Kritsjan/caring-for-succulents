@@ -1,6 +1,22 @@
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /tools/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Disallow template files and development files
+Disallow: /templates/
+Disallow: /blog-post-template.html
+Disallow: /blog/blog-template.html
+Disallow: /*.template.html$
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /README.md
+
+# Point to sitemap for better indexing
 Sitemap: https://caringforsucculents.com/sitemap.xml
 
-# Allow all bots to access everything
-# Point to sitemap for better indexing
+# Crawl-delay to prevent server overload
+Crawl-delay: 1
