@@ -6,7 +6,7 @@ Allow: /images/
 Allow: /css/
 Allow: /js/
 
-# Disallow template files and development files
+# Block template and development files
 Disallow: /templates/
 Disallow: /blog-post-template.html
 Disallow: /blog/blog-template.html
@@ -14,9 +14,19 @@ Disallow: /*.template.html$
 Disallow: /.git/
 Disallow: /.gitignore
 Disallow: /README.md
+Disallow: /sitemap.xsl
 
-# Point to sitemap for better indexing
+# Point to sitemap
 Sitemap: https://caringforsucculents.com/sitemap.xml
 
 # Crawl-delay to prevent server overload
 Crawl-delay: 1
+
+# Additional rules for better indexing
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.gif
+Allow: *.svg
