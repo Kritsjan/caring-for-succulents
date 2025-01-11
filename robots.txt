@@ -17,7 +17,7 @@ Disallow: /README.md
 Disallow: /sitemap.xsl
 
 # Point to sitemap
-Sitemap: https://kritsjan.github.io/caring-for-succulents/sitemap.xml
+Sitemap: https://caringforsucculentplants.com/sitemap.xml
 
 # Crawl-delay to prevent server overload
 Crawl-delay: 1
