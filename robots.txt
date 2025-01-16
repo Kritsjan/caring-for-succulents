@@ -6,21 +6,22 @@ Allow: /images/
 Allow: /css/
 Allow: /js/
 
-# Block template and development files
+# Block development files and templates
 Disallow: /templates/
-Disallow: /blog-post-template.html
-Disallow: /blog/blog-template.html
-Disallow: /*.template.html$
+Disallow: /*template*
+Disallow: /*.template.*
+Disallow: /blog/*template*
+Disallow: /tools/*template*
 Disallow: /.git/
 Disallow: /.gitignore
 Disallow: /README.md
 Disallow: /sitemap.xsl
+Disallow: /*.md$
+Disallow: /components/
+Disallow: /includes/
 
 # Point to sitemap
 Sitemap: https://caringforsucculentplants.com/sitemap.xml
-
-# Crawl-delay to prevent server overload
-Crawl-delay: 1
 
 # Additional rules for better indexing
 Allow: *.css
@@ -30,3 +31,6 @@ Allow: *.jpeg
 Allow: *.png
 Allow: *.gif
 Allow: *.svg
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
