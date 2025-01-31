@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Guide to Caring for Succulents | Caring for Succulents</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <meta name="description" content="Everything you need to know about succulent care, from basic maintenance to advanced growing tips. Perfect for beginners and experts alike.">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/blog-styles.css">
@@ -383,7 +384,7 @@
     <!-- Header placeholder -->
     <div id="header-placeholder"></div>
 
-    <main id="main-content">
+    <main id="main-content" class="blog-post">
         <article>
             <header class="blog-header">
                 <img src="https://images.pexels.com/photos/4503823/pexels-photo-4503823.jpeg?auto=compress&cs=tinysrgb&w=1920" 
@@ -400,6 +401,10 @@
                     </div>
                 </div>
             </header>
+            
+            <div class="affiliate-disclaimer">
+                <p>This page may contain affiliate links. If you click on these links and make a purchase, I may earn a commission at no extra cost to you.</p>
+            </div>
 
             <div class="post-content">
                 <div class="intro">
@@ -556,29 +561,8 @@
 
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
-
-    <script>
-        // Mobile Menu Toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-            this.setAttribute('aria-expanded', 
-                this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
-            );
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navLinks = document.querySelector('.nav-links');
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (navLinks.classList.contains('active') && 
-                !event.target.closest('.nav-links') && 
-                !event.target.closest('.mobile-menu-btn')) {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            }
-        });
-    </script>
+    
+    <!-- Components Script -->
+    <script src="../js/header-footer.js"></script>
 </body>
 </html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Purple and Green Succulents for Your Garden | Caring for Succulents</title>
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="description" content="Explore the best purple and green succulents! Learn top varieties, care tips, and creative ways to combine them for a vibrant, eye-catching garden.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            color: #FFFFFF !important;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 6rem 2rem;
+            overflow: hidden;
+        }
+
+        .blog-header h1 {
+            color: #FFFFFF !important;
+            position: relative;
+            z-index: 2;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .blog-header-content {
+            color: #FFFFFF !important;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1200px;
+        }
+
+        .blog-meta-header {
+            color: #FFFFFF !important;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .blog-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .blog-header-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .post-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .blog-image {
+            margin: 1.5rem 0;
+            padding: 0;
+            max-width: 500px;
+            margin-left: 0;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            object-fit: cover;
+            aspect-ratio: 4/3;
+        }
+
+        .blog-image figcaption {
+            margin-top: 0.5rem;
+            text-align: left;
+            font-size: 0.9rem;
+            color: var(--text-color-light);
+        }
+
+        .post-body p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .post-body h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .post-body h3 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .product-card {
+            background: var(--background-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            object-fit: contain;
+            background-color: #ffffff;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .product-description {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .product-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #ffffff !important;
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .product-button:hover {
+            background: var(--primary-color-dark);
+        }
+
+        .faq-section {
+            width: 100%;
+            margin: 3rem 0;
+        }
+
+        .faq-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        .faq-item {
+            background: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            width: 100%;
+        }
+
+        .faq-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .faq-item p {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+
+            .post-content {
+                padding: 1rem;
+            }
+
+            .blog-image {
+                max-width: 100%;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-item {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body data-page="blog">
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main id="main-content" class="blog-post">
+        <article>
+            <header class="blog-header">
+                <img src="https://images.pexels.com/photos/4503271/pexels-photo-4503271.jpeg?auto=compress&cs=tinysrgb&w=1920" 
+                     alt="Beautiful arrangement of purple and green succulents in decorative pots" 
+                     class="blog-header-image">
+                <div class="blog-header-content">
+                    <h1>Best Purple and Green Succulents for Your Garden</h1>
+                    <div class="blog-meta-header">
+                        <span class="date">January 30, 2025</span>
+                        <span class="read-time">8 min read</span>
+                        <span class="category">Succulent Varieties</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <div class="intro">
+                    <p>Want to know which purple and green succulents are perfect for your garden? In this article, you'll discover the best varieties, how to care for them, and creative tips for combining these vibrant succulents to transform your garden into a colorful oasis.</p>
+                </div>
+
+                <div class="key-takeaways">
+                    <h2>Key Takeaways</h2>
+                    <ul>
+                        <li>Purple succulents like Echeveria Perle von Nurnberg and Graptosedum Alpenglow add striking color and visual appeal to gardens.</li>
+                        <li>Green succulents such as Senecio jacobsenii and Panda Plant provide lush, vibrant backgrounds that complement purple varieties.</li>
+                        <li>Proper care, including attention to light, watering, and soil needs, is essential for maintaining the health and color of succulent plants.</li>
+                    </ul>
+                </div>
+
+                <div class="affiliate-disclaimer">
+                    <p>This page may contain affiliate links. If you click on these links and make a purchase, I may earn a commission at no extra cost to you.</p>
+                </div>
+
+                <div class="post-body">
+                    <h2>Top Purple Succulent Varieties</h2>
+                    <p>Purple succulents are captivating additions to any garden, offering a striking contrast against greenery. These colorful varieties not only enhance the visual appeal but also showcase nature's artistry in their forms and hues.</p>
+                    
+                    <p>Among the most popular purple succulents, Echeveria Perle von Nurnberg, Graptosedum Alpenglow, and Echeveria Purple Pearl stand out for their unique characteristics and vibrant colors.</p>
+
+                    <h3>Echeveria Perle von Nurnberg</h3>
+                    <figure class="blog-image">
+                        <img src="photos/purple-green/Echeveria Perle von Nurnberg.jpg" 
+                             alt="Echeveria Perle von Nurnberg succulent with beautiful purple-pink rosettes" 
+                             title="Echeveria Perle von Nurnberg - A stunning purple succulent variety"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <figcaption>Echeveria Perle von Nurnberg with its distinctive purple-pink coloring</figcaption>
+                    </figure>
+                    <p>This stunning variety features rosettes of powdery lavender-pink leaves. Its ethereal coloring makes it a favorite among succulent enthusiasts.</p>
+
+                    <h3>Graptosedum Alpenglow</h3>
+                    <figure class="blog-image">
+                        <img src="photos/purple-green/Graptosedum Alpenglow.jpg" 
+                             alt="Graptosedum Alpenglow succulent displaying vibrant red-purple colors" 
+                             title="Graptosedum Alpenglow - A vibrant red-purple succulent"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <figcaption>Graptosedum Alpenglow showing its intense coloration</figcaption>
+                    </figure>
+                    <p>Also known as Vera Higgins, this hybrid showcases beautiful red-purple leaves that intensify in color with sun exposure.</p>
+
+                    <h3>Echeveria Purple Pearl</h3>
+                    <figure class="blog-image">
+                        <img src="photos/purple-green/Echeveria Purple Pearl.jpg" 
+                             alt="Echeveria Purple Pearl succulent with deep purple leaves" 
+                             title="Echeveria Purple Pearl - Deep purple succulent variety"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <figcaption>Echeveria Purple Pearl with its rich purple hues</figcaption>
+                    </figure>
+                    <p>Its elegance makes it a standout in any succulent collection, adding beauty and sophistication.</p>
+
+                    <h2>Best Green Succulent Varieties</h2>
+                    <p>Green succulents are celebrated for their lush and vibrant appearance, making them a staple in gardens worldwide. Their rich foliage creates a soothing backdrop that complements the bolder hues of purple succulents.</p>
+
+                    <h3>Echeveria Elegans</h3>
+                    <figure class="blog-image">
+                        <img src="photos/purple-green/ehevaria elegans.jpg" 
+                             alt="Echeveria Elegans with its perfect rosette of pale green leaves" 
+                             title="Echeveria Elegans - Mexican Snowball Succulent"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <figcaption>Echeveria Elegans, also known as Mexican Snowball</figcaption>
+                    </figure>
+                    <p>Known as Mexican Snowball, this succulent features perfect rosettes of pale green leaves, creating an elegant and timeless appearance.</p>
+
+                    <h3>Kalanchoe Tomentosa (Panda Plant)</h3>
+                    <p>The Panda Plant is beloved for its thick, fuzzy leaves that have a soft, velvety texture. Its unique appearance adds wonderful texture to any succulent arrangement.</p>
+
+                    <h2>Combining Purple and Green Succulents</h2>
+                    <p>Purple and green succulents together create a visually stunning garden that plays with colors and textures. This dynamic pairing enhances the aesthetic appeal, providing a balanced and vibrant display. Learn more about basic succulent care in our <a href="../caring-for-succulents/">basic succulent care guide</a>.</p>
+                    
+                    <p>Mixing different varieties, such as those mentioned, creates a harmonious blend that captivates the eye and adds depth to your garden.</p>
+
+                    <h3>Creating Color Contrast</h3>
+                    <p>Color contrast is key to a visually appealing garden. Combining the vibrant purples of Echeveria with the lush greens of other varieties can create striking contrasts that elevate your garden's design.</p>
+                    
+                    <p>Arranging succulents in containers enables creative expressions of shape and form. The choice of container can significantly influence the overall aesthetic, with contrasting colors enhancing the beauty of mixed purple and green succulents. Check out our <a href="../tools/pot-volume-calculator">pot volume calculator</a> to ensure your containers are the right size.</p>
+                    
+                    <p>Whether you opt for matching or contrasting containers, the right choice will bring out the best in your succulent arrangement, making it a standout feature in any space.</p>
+
+                    <h3>Hanging Displays</h3>
+                    <p>Hanging displays add vertical interest and maximize limited space effectively. Trailing varieties are perfect for this purpose, with their cascading growth creating beautiful vertical displays.</p>
+                    
+                    <p>These hanging succulents showcase both purple and green tones effectively, adding depth and visual interest to any garden or indoor setting.</p>
+
+                    <h2>Caring for Your Purple and Green Succulents</h2>
+                    <figure class="blog-image">
+                        <img src="photos/purple-green/succulent-plants-2408910_1920.jpg" 
+                             alt="Well-maintained purple and green succulents in decorative pots" 
+                             title="Proper care helps succulents thrive and maintain their vibrant colors"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <figcaption>Well-maintained succulents showing healthy growth and vibrant colors</figcaption>
+                    </figure>
+                    <p>Proper care is essential for maintaining the vibrant colors and healthy growth of your succulents. Here are key care tips to help your plants thrive:</p>
+
+                    <h3>Light Requirements</h3>
+                    <p>Most purple and green succulents need bright, indirect sunlight to maintain their vibrant colors. Purple varieties often need more sun exposure to maintain their rich hues. However, protect them from intense afternoon sun in hot climates.</p>
+
+                    <h3>Watering Needs</h3>
+                    <p>Follow the "soak and dry" method - water thoroughly when the soil is completely dry. Overwatering is the most common issue with succulents, so err on the side of underwatering. For more detailed guidance, visit our <a href="../common-watering-mistakes/">watering guide</a>.</p>
+
+                    <h3>Soil and Drainage</h3>
+                    <p>Use well-draining soil specifically formulated for succulents and ensure pots have drainage holes. This prevents root rot and promotes healthy growth.</p>
+
+                    <h2>Seasonal Changes and Color Variations</h2>
+                    <figure class="blog-image">
+                        <img src="photos/purple-green/energetic-succulent-plant.jpg" 
+                             alt="Vibrant succulent displaying seasonal color variations" 
+                             title="Seasonal changes affect succulent colors and growth patterns"
+                             loading="lazy"
+                             width="800"
+                             height="600">
+                        <figcaption>Succulents showing beautiful color variations due to seasonal changes</figcaption>
+                    </figure>
+                    <p>Succulents undergo fascinating color changes throughout the year. Understanding these variations helps you provide optimal care and appreciate their natural beauty:</p>
+
+                    <h3>Summer Colors</h3>
+                    <p>During summer, many succulents display their most vibrant colors. Purple varieties often intensify their hues with increased sun exposure, while green varieties maintain their lush appearance with proper watering.</p>
+
+                    <h3>Winter Changes</h3>
+                    <p>In winter, some succulents may show more subtle coloring as they enter a period of dormancy. This is natural and helps them conserve energy during the cooler months.</p>
+
+                    <h2>Combining Purple and Green Succulents</h2>
+                    <p>Purple and green succulents together create a visually stunning garden that plays with colors and textures. This dynamic pairing enhances the aesthetic appeal, providing a balanced and vibrant display.</p>
+
+                    <h2>Recommended Products for Succulent Care</h2>
+                    <p>The right products can greatly enhance the growth and health of your succulents. From pots to soil mixes, these recommendations support optimal care.</p>
+
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="https://m.media-amazon.com/images/I/61q4rSJSNjL._AC_SL1000_.jpg" 
+                                 alt="26-pcs Succulent Tools Set" 
+                                 class="product-image">
+                            <h3 class="product-title">26-pcs Succulent Tools Set</h3>
+                            <p class="product-description">Upgrade your succulent care with this 26-piece gardening tool set! Includes watering bottles, tweezers, trimmers, shovels, a foldable repotting mat, and more. Durable, lightweight, and perfect for planting, pruning, and cleaning.</p>
+                            <a href="https://amzn.to/4hczgb1" class="product-button" target="_blank" rel="nofollow noopener">View on Amazon</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://m.media-amazon.com/images/I/718oqjBheRL._AC_SL1500_.jpg" 
+                                 alt="3-in-1 Soil Moisture Meter" 
+                                 class="product-image">
+                            <h3 class="product-title">3-in-1 Soil Moisture Meter</h3>
+                            <p class="product-description">The 3-in-1 Digital Soil Meter measures pH, moisture, and temperature via backlit LCD—day or night. Dual-probe tech ensures precise hydration and acidity levels. Lightweight and easy to use, perfect for beginners and pros.</p>
+                            <a href="https://amzn.to/3Cq2owl" class="product-button" target="_blank" rel="nofollow noopener">View on Amazon</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://m.media-amazon.com/images/I/81TWivE98cL._AC_SL1500_.jpg" 
+                                 alt="Elegant Ceramic Succulent Pot & Complete Care Kit" 
+                                 class="product-image">
+                            <h3 class="product-title">Elegant Ceramic Succulent Pot & Complete Care Kit</h3>
+                            <p class="product-description">Enhance your space with this stunning glazed ceramic succulent pot, paired with a sleek wooden stand and drainage hole for healthy roots. Includes 6 essential tools + 2.2lb volcanic pebbles</p>
+                            <a href="https://amzn.to/4hBP9aF" class="product-button" target="_blank" rel="nofollow noopener">View on Amazon</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://m.media-amazon.com/images/I/81AZ4QVF7eL._AC_SL1500_.jpg" 
+                                 alt="Set of ceramic succulent plant pots" 
+                                 class="product-image">
+                            <h3 class="product-title">Ceramic Succulent Plant Pots</h3>
+                            <p class="product-description">These elegant ceramic pots provide excellent drainage and durability for your succulents. Perfect for both indoor and outdoor displays, they come in various sizes to accommodate your growing collection.</p>
+                            <a href="https://amzn.to/4iMC3sy" class="product-button" target="_blank" rel="nofollow noopener">View on Amazon</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://m.media-amazon.com/images/I/6186y9grfqL._AC_SL1500_.jpg" 
+                                 alt="Miracle-Gro Premium Peat-Free Houseplant Potting Mix" 
+                                 class="product-image">
+                            <h3 class="product-title">Miracle-gro Premium Peat-Free Potting Mix</h3>
+                            <p class="product-description">Specially formulated for succulents, this premium potting mix ensures optimal drainage and healthy root development. Contains a perfect blend of nutrients for sustained growth.</p>
+                            <a href="https://amzn.to/3ZR5Es9" class="product-button" target="_blank" rel="nofollow noopener">View on Amazon</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://m.media-amazon.com/images/I/91MOUFyW9ZL._AC_SL1500_.jpg" 
+                                 alt="Natural Polished Pebbles for Plant Pots" 
+                                 class="product-image">
+                            <h3 class="product-title">Natural Polished Pebbles</h3>
+                            <p class="product-description">These beautiful polished pebbles not only enhance the appearance of your succulent displays but also help maintain soil moisture and prevent weed growth. Perfect for top dressing your containers.</p>
+                            <a href="https://amzn.to/4gPK7qK" class="product-button" target="_blank" rel="nofollow noopener">View on Amazon</a>
+                        </div>
+                    </div>
+
+                    <h2>Summary</h2>
+                    <p>Choosing the right varieties of purple and green succulents can transform your garden into a vibrant and dynamic space. With proper care, including the right light conditions, watering practices, and soil requirements, your succulents will thrive and add lasting beauty to your garden. Learn more about propagation in our <a href="../propagating-succulents/">propagating succulents guide</a>. Incorporating recommended products like ceramic pots, specialized potting mix, and soil moisture meters can further enhance their growth and health. Embrace the joy of gardening with these stunning succulents and watch your garden flourish.</p>
+                </div><!-- end of post-body -->
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-content">
+                        <div class="faq-item">
+                            <h3>What are the best purple succulents for my garden?</h3>
+                            <p>For a vibrant garden, choose Echeveria Perle von Nurnberg, Graptosedum Alpenglow, and Echeveria Purple Pearl. These stunning purple succulents will add unique beauty to your outdoor space.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>How do I care for purple and green succulents?</h3>
+                            <p>To keep your purple and green succulents thriving, provide them with bright, direct sunlight and water only when the top inch of soil is dry. Using well-draining soil is essential for their vibrant colors and overall health. Visit our <a href="../caring-for-succulents/">basic succulent care guide</a> for more detailed information.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>What products can help enhance the growth of my succulents?</h3>
+                            <p>Essential products for succulent care include well-draining pots with drainage holes, specialized succulent potting mix, and moisture meters to prevent overwatering. Consider adding decorative pebbles for top dressing and using proper tools for maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of post-content -->
+        </article>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Components Script -->
+    <script src="../js/header-footer.js"></script>
+</body>
+</html>

@@ -5,14 +5,21 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Remove www
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [L,R=301]
+# Remove www and force domain (combined rule)
+RewriteCond %{HTTP_HOST} !^caringforsucculentplants\.com$ [NC]
+RewriteRule ^(.*)$ https://caringforsucculentplants.com/$1 [L,R=301]
 
-# Remove .html extension
+# Redirect /index.html to /
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Remove .html extension from URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
+
+# Internally add .html extension
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
 
 # Remove trailing slashes from files
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -23,13 +30,6 @@ RewriteRule ^ %1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_URI} !/$
 RewriteRule ^ %{REQUEST_URI}/ [R=301,L]
-
-# Redirect /index.html to /
-RewriteRule ^index\.html$ / [R=301,L]
-
-# Force domain
-RewriteCond %{HTTP_HOST} !^caringforsucculentplants\.com$ [NC]
-RewriteRule ^(.*)$ https://caringforsucculentplants.com/$1 [L,R=301]
 
 # Custom error pages
 ErrorDocument 404 /404.html
@@ -50,21 +50,19 @@ ErrorDocument 404 /404.html
     ExpiresActive On
     ExpiresByType image/jpg "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
     ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType text/javascript "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
-</IfModule>
-
-# Security headers
-<IfModule mod_headers.c>
-    Header set X-Content-Type-Options "nosniff"
-    Header set X-Frame-Options "SAMEORIGIN"
-    Header set X-XSS-Protection "1; mode=block"
-    Header set Referrer-Policy "strict-origin-when-cross-origin"
-    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType text/html "access plus 1 day"
+    ExpiresByType application/xhtml+xml "access plus 1 day"
 </IfModule>
 
 # Prevent directory listing
 Options -Indexes
+
+# Set default character set
+AddDefaultCharset UTF-8

@@ -1,3 +1,6 @@
+# Main sitemap
+Sitemap: https://caringforsucculentplants.com/sitemap.xml
+
 User-agent: *
 Allow: /
 Allow: /blog/
@@ -20,8 +23,24 @@ Disallow: /*.md$
 Disallow: /components/
 Disallow: /includes/
 
-# Point to sitemap
-Sitemap: https://caringforsucculentplants.com/sitemap.xml
+# Block admin and system files
+Disallow: /*.php$
+Disallow: /*.log$
+Disallow: /*.txt$
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.yml$
+Disallow: /*.yaml$
+Disallow: /*.conf$
+Disallow: /*.config$
+Disallow: /*.sh$
+Disallow: /*.bash$
+Disallow: /*.env$
+Disallow: /*.env.*
+Disallow: /*.lock$
+
+# Allow sitemap
+Allow: /sitemap.xml
 
 # Additional rules for better indexing
 Allow: *.css

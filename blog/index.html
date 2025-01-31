@@ -8,7 +8,7 @@
     
     <!-- SEO Meta Tags -->
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://caringforsucculents.com/blog/">
+    <link rel="canonical" href="https://caringforsucculentplants.com/blog/">
     <meta property="og:title" content="Succulent Care Blog - Expert Tips & Guides">
     <meta property="og:description" content="Expert tips and comprehensive guides on caring for succulents. Learn about watering, propagation, and common mistakes to avoid.">
     <meta property="og:url" content="https://caringforsucculents.com/blog/">
@@ -51,8 +51,8 @@
 
         .blog-preview {
             background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
             height: 100%;
@@ -63,14 +63,14 @@
 
         .blog-preview:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+            box-shadow: var(--shadow-md);
         }
 
         .blog-preview img {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            border-radius: 12px 12px 0 0;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
         }
 
         .blog-preview-content {
@@ -84,13 +84,21 @@
             line-height: 1.4;
         }
 
+        .blog-preview p {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
         .blog-meta-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-size: 0.9rem;
-            color: #888;
-            margin-top: auto;
+            color: var(--light-text);
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
         }
 
         .page-title {
@@ -104,9 +112,36 @@
             text-align: center;
             max-width: 800px;
             margin: 0 auto 3rem auto;
-            color: #666;
+            color: var(--light-text);
             font-size: 1.1rem;
             line-height: 1.6;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .read-more:hover {
+            color: var(--primary-color-dark);
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .blog-preview img {
+                height: 180px;
+            }
         }
     </style>
     <!-- Components Script -->
@@ -125,12 +160,28 @@
             </p>
 
             <div class="blog-grid">
+                <a href="purple-green-succulents.html" class="blog-preview">
+                    <img src="https://images.pexels.com/photos/4503271/pexels-photo-4503271.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Beautiful arrangement of purple and green succulents" 
+                         loading="lazy">
+                    <div class="blog-preview-content">
+                        <h2>Best Purple and Green Succulents for a Stunning Garden</h2>
+                        <p>Discover the most beautiful purple and green succulent varieties and learn how to combine them for a stunning garden display.</p>
+                        <div class="blog-meta-header">
+                            <span class="date">Jan 29, 2025</span>
+                            <span class="read-time">8 min read</span>
+                            <span class="category">Plant Care</span>
+                        </div>
+                    </div>
+                </a>
+
                 <a href="caring-for-succulents.html" class="blog-preview">
                     <img src="https://images.pexels.com/photos/4503823/pexels-photo-4503823.jpeg?auto=compress&cs=tinysrgb&w=1920" 
                          alt="Beautiful green succulent plants arranged in brown clay pots"
                          loading="lazy">
                     <div class="blog-preview-content">
                         <h2>Complete Guide to Caring for Succulents</h2>
+                        <p>Everything you need to know about succulent care, from basic maintenance to advanced growing tips.</p>
                         <div class="blog-meta-header">
                             <span class="date">Dec 15, 2024</span>
                             <span class="read-time">8 min read</span>
@@ -141,10 +192,11 @@
 
                 <a href="common-watering-mistakes.html" class="blog-preview">
                     <img src="https://images.pexels.com/photos/9032143/pexels-photo-9032143.jpeg?auto=compress&cs=tinysrgb&w=1920" 
-                         alt="Person carefully watering a succulent plant"
+                         alt="Person carefully watering a succulent plant" 
                          loading="lazy">
                     <div class="blog-preview-content">
                         <h2>Common Watering Mistakes with Succulents</h2>
+                        <p>Learn about the most common watering mistakes and how to avoid them to keep your succulents healthy.</p>
                         <div class="blog-meta-header">
                             <span class="date">Dec 16, 2024</span>
                             <span class="read-time">6 min read</span>
@@ -159,6 +211,7 @@
                          loading="lazy">
                     <div class="blog-preview-content">
                         <h2>Guide to Propagating Succulents</h2>
+                        <p>Learn how to propagate succulents using leaves, stems, and division.</p>
                         <div class="blog-meta-header">
                             <span class="date">Dec 17, 2024</span>
                             <span class="read-time">7 min read</span>
@@ -173,6 +226,7 @@
                          loading="lazy">
                     <div class="blog-preview-content">
                         <h2>Planting Your Propagated Succulents</h2>
+                        <p>Learn how to plant your propagated succulents in soil and care for them.</p>
                         <div class="blog-meta-header">
                             <span class="date">Dec 18, 2024</span>
                             <span class="read-time">5 min read</span>
@@ -186,28 +240,6 @@
 
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
-    <script>
-        // Mobile Menu Toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-            this.setAttribute('aria-expanded', 
-                this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
-            );
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navLinks = document.querySelector('.nav-links');
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (navLinks.classList.contains('active') && 
-                !event.target.closest('.nav-links') && 
-                !event.target.closest('.mobile-menu-btn')) {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            }
-        });
-    </script>
+    <script src="../js/header-footer.js"></script>
 </body>
 </html>

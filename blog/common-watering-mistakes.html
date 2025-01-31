@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Common Watering Mistakes to Avoid with Succulents | Caring for Succulents</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <meta name="description" content="Discover the most common watering mistakes when caring for succulents and learn how to avoid them. Real solutions from years of experience growing succulents.">
     
     <!-- SEO Meta Tags -->
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://caringforsucculents.com/blog/common-watering-mistakes.html">
+    <link rel="canonical" href="https://caringforsucculentplants.com/blog/common-watering-mistakes">
     <meta property="og:title" content="Common Watering Mistakes to Avoid with Succulents | Expert Guide">
     <meta property="og:description" content="Discover the most common watering mistakes when caring for succulents and learn how to avoid them. Real solutions from years of experience growing succulents.">
-    <meta property="og:url" content="https://caringforsucculents.com/blog/common-watering-mistakes.html">
+    <meta property="og:url" content="https://caringforsucculentplants.com/blog/common-watering-mistakes">
     <meta property="og:type" content="article">
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/blog-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script src="../js/components.js"></script>
 </head>
 <body data-page="blog">
     <a href="#main-content" class="skip-to-main">Skip to main content</a>
@@ -42,6 +42,10 @@
                     </div>
                 </div>
             </header>
+
+            <div class="affiliate-disclaimer">
+                <p>This page may contain affiliate links. If you click on these links and make a purchase, I may earn a commission at no extra cost to you.</p>
+            </div>
 
             <div class="post-content">
                 <p class="intro">
@@ -411,28 +415,8 @@
 
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
-    <script>
-        // Mobile Menu Toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-            this.setAttribute('aria-expanded', 
-                this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
-            );
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const navLinks = document.querySelector('.nav-links');
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (navLinks.classList.contains('active') && 
-                !event.target.closest('.nav-links') && 
-                !event.target.closest('.mobile-menu-btn')) {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            }
-        });
-    </script>
+    
+    <!-- Components Script -->
+    <script src="../js/header-footer.js"></script>
 </body>
 </html>

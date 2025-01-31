@@ -3,43 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="[Blog Post Description]">
     <title>[Blog Post Title] | Caring For Succulents</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="[Blog Post Description]">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="main-header">
-        <nav class="nav-container">
-            <div class="logo">
-                <h1>Caring For Succulents</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="propagation-guide.html">Propagation Guide</a></li>
-                <li><a href="care-tips.html">Care Tips</a></li>
-                <li><a href="common-problems.html">Common Problems</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            color: #FFFFFF !important;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 6rem 2rem;
+            overflow: hidden;
+        }
 
-    <main class="blog-post">
+        .blog-header h1 {
+            color: #FFFFFF !important;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blog-header-content {
+            color: #FFFFFF !important;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 1rem auto;
+        }
+
+        .blog-meta-header {
+            color: #FFFFFF !important;
+            position: relative;
+            z-index: 2;
+        }
+
+        .blog-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .blog-header-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .content-with-image {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 2rem;
+            gap: 2rem;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .faq-content {
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .faq-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-recommendations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .product {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .product h3 {
+            margin-bottom: 1rem;
+        }
+
+        .product-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .product-link:hover {
+            background: #388E3C;
+        }
+
+        @media (max-width: 768px) {
+            .content-with-image {
+                flex-direction: column;
+            }
+            
+            .product-recommendations {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body data-page="blog">
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main id="main-content" class="blog-post">
         <article>
-            <header class="post-header">
-                <h1>[Blog Post Title]</h1>
-                <div class="post-meta">
-                    <span class="post-date">Published on [Date]</span>
-                    <span class="post-author">by [Author Name]</span>
+            <header class="blog-header">
+                <img src="[Featured Image URL]" 
+                     alt="[Featured Image Alt Text]" 
+                     class="blog-header-image">
+                <div class="blog-header-content">
+                    <h1>[Blog Post Title]</h1>
+                    <div class="blog-meta-header">
+                        <span class="post-date">Published on [Date]</span>
+                        <span class="post-author">by [Author Name]</span>
+                    </div>
                 </div>
             </header>
 
             <div class="post-content">
-                <img src="[Featured Image URL]" alt="[Image Description]" class="featured-image">
-                
+                <div class="intro">
+                    <p>[Introduction paragraph]</p>
+                </div>
+
+                <div class="affiliate-disclaimer">
+                    <p>This page may contain affiliate links. If you click on these links and make a purchase, I may earn a commission at no extra cost to you.</p>
+                </div>
+
                 <div class="post-body">
                     <!-- Introduction -->
                     <p>[Introduction paragraph]</p>
@@ -84,34 +236,12 @@
                 </div>
             </div>
         </article>
-
-        <!-- Related Posts -->
-        <aside class="related-posts">
-            <h3>Related Articles</h3>
-            <div class="related-posts-grid">
-                <!-- Related posts will be dynamically added here -->
-            </div>
-        </aside>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Caring For Succulents</h3>
-                <p>Your trusted guide to succulent and cacti care.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Caring For Succulents. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="../js/header-footer.js"></script>
 </body>
 </html>
